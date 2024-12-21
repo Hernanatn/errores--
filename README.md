@@ -1,6 +1,6 @@
-## `Errores++`
+## `Errores--`
 
-`Errores++` es una librería de C++ que facilita el manejo de errores, valores opcionales y resultados de operaciones mediante tres tipos principales: `Error`, `Opcion` y `Resultado`. Esta librería proporciona una forma coherente y flexible de gestionar el flujo de control en situaciones donde es necesario manejar errores de manera explícita -evitando rupturas en el flujo de control a través de excepciones- y gestionar la presencia o ausencia de valores de forma segura.
+`Errores--` es una librería de C++ que facilita el manejo de errores, valores opcionales y resultados de operaciones mediante tres tipos principales: `Error`, `Opcion` y `Resultado`. Esta librería proporciona una forma coherente y flexible de gestionar el flujo de control en situaciones donde es necesario manejar errores de manera explícita -evitando rupturas en el flujo de control a través de excepciones- y gestionar la presencia o ausencia de valores de forma segura.
 
 Está inspirada en el manejo de errores como valores de `Go` y en los contenedores Option<T> y Result<T> de `Rust`.
 
@@ -16,7 +16,7 @@ La librería se presenta aún en versión alpha - distribución `v 0.0.1-alpha`,
 
 ## Índice
 
-1. [Errores++](#errores)
+1. [Errores--](#errores)
     - Descripción general
 2. [Tipos Principales](#tipos-principales)
     - [Error](#error)
@@ -38,7 +38,7 @@ La librería se presenta aún en versión alpha - distribución `v 0.0.1-alpha`,
     - [Ejemplo 1: Manejo de Errores](#ejemplo-1-manejo-de-errores)
     - [Ejemplo 2: Uso de `Opcion` (Valores Opcionales)](#ejemplo-2-uso-de-opcion-valores-opcionales)
     - [Ejemplo 3: Resultados de Operaciones con `Resultado`](#ejemplo-3-resultados-de-operaciones-con-resultado)
-    - [Ejemplo 4: Integración de `Errores++` en un Proyecto Completo](#ejemplo-4-integracion-de-errores-en-un-proyecto-completo)
+    - [Ejemplo 4: Integración de `Errores--` en un Proyecto Completo](#ejemplo-4-integracion-de-errores-en-un-proyecto-completo)
 4. [Conclusiones](#conclusiones)
 
 ---
@@ -127,7 +127,7 @@ if (error) {
 ```
 ## Ejemplos Completos
 
-A continuación se presentan algunos ejemplos completos de uso de la librería `Errores++`, ilustrando cómo manejar errores, valores opcionales y resultados de operaciones.
+A continuación se presentan algunos ejemplos completos de uso de la librería `Errores--`, ilustrando cómo manejar errores, valores opcionales y resultados de operaciones.
 
 ### Ejemplo 1: Manejo de Errores
 
@@ -231,9 +231,9 @@ int main() {
 }
 ```
 
-### Ejemplo 4: Integración de `Errores++` en un Proyecto Completo
+### Ejemplo 4: Integración de `Errores--` en un Proyecto Completo
 
-Este ejemplo muestra cómo se puede integrar toda la funcionalidad de `Errores++` para gestionar valores opcionales y resultados, así como manejar errores de manera coherente en un programa más grande.
+Este ejemplo muestra cómo se puede integrar toda la funcionalidad de `Errores--` para gestionar valores opcionales y resultados, así como manejar errores de manera coherente en un programa más grande.
 
 ```cpp
 #include "Errores.hpp"
