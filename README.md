@@ -39,8 +39,6 @@ La librería se presenta aún en versión alpha - distribución `v 0.0.1-alpha`,
     - [Ejemplo 2: Uso de `Opcion` (Valores Opcionales)](#ejemplo-2-uso-de-opcion-valores-opcionales)
     - [Ejemplo 3: Resultados de Operaciones con `Resultado`](#ejemplo-3-resultados-de-operaciones-con-resultado)
     - [Ejemplo 4: Integración de `Errores--` en un Proyecto Completo](#ejemplo-4-integracion-de-errores-en-un-proyecto-completo)
-4. [Conclusiones](#conclusiones)
-
 ---
 
 ### Tipos Principales
