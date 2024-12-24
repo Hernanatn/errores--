@@ -9,7 +9,7 @@ La librería se presenta aún en versión alpha - distribución `v 0.1.0-alpha`,
 
 [![Hecho por Chaska](https://img.shields.io/badge/hecho_por-Ch'aska-303030.svg)](https://cajadeideas.ar)
 [![Versión: Alpha v0.1.0](https://img.shields.io/badge/version-Alpha_v0.1.0-orange.svg)](https://github.com/hernanatn/github.com/hernanatn/aplicacion.go/releases/latest)
-[![Verisón de C++: 17](https://img.shields.io/badge/C++-17-blue?logo=cplusplus)](https://go.dev/doc/go1.22)
+[![Verisón de C++: 17](https://img.shields.io/badge/C++-17-blue?logo=cplusplus)](https://es.cppreference.com/w/cpp/17)
 [![Licencia: CC BY-NC 4.0](https://img.shields.io/badge/Licencia-CC_BY--SA_4.0-lightgrey.svg)](LICENSE)
 
 
