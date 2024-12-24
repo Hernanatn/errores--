@@ -1,12 +1,14 @@
 #ifndef RESULTADO_HPP
 #define RESULTADO_HPP
-#include "utiles/Genericos.hpp"
-#include "Error.hpp"
+
 #include <tuple>
 #include <memory>
 #include <utility>
 
-namespace Resultado {
+#include "utiles/Genericos.hpp"
+#include "error.hpp"
+
+namespace res { //Declaración
         /**
     * @brief Estructura que representa el resultado de una operación.
     *
@@ -38,28 +40,113 @@ namespace Resultado {
     class Resultado{
         private:
             T resultado;
-            Error::Error error;
+            err::Error error;
 
         protected:
 
         public:
             Resultado() noexcept
-            : Resultado{T{},Error::Exito()} 
+            : Resultado{T{},err::EXITO, "Operación exitosa"} 
             {};
 
             explicit Resultado(T data) noexcept;
-            explicit Resultado(T data, Error::CodigoEstado codigo, std::string mensaje) noexcept;
-            explicit Resultado(T data, Error::Error error) noexcept;
+            explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
+            explicit Resultado(T data, err::Error error) noexcept;
 
-            Error::Error Error() const noexcept;
-            std::tuple<T, Error::Error>Consumir() noexcept;
+            err::Error Error() const noexcept;
+            std::tuple<T, err::Error>Consumir() noexcept;
             ~Resultado() noexcept;
 
             operator bool() noexcept;
-            std::tuple<T, Error::Error> operator()() noexcept;
+            std::tuple<T, err::Error> operator()() noexcept;
     };
 }
 
-#include "Resultado.ipp"
+namespace res { // Implementación
+    template<typename T>
+    Resultado<T>::Resultado(T data, err::Error e) noexcept{
+        
+        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
+            this->resultado = data;
+        } else if constexpr (std::is_pointer<T>::value) {
+            this->resultado = data;  
+        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
+        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
+            this->resultado = std::move(data);
+        } else {
+            this->resultado = data;
+        }
+        this->error = e;
+    }
+
+    template<typename T>
+    Resultado<T>::Resultado(T data) noexcept{
+                
+        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
+            this->resultado = data;
+        } else if constexpr (std::is_pointer<T>::value) {
+            this->resultado = data;  
+        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
+        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
+            this->resultado = std::move(data);
+        } else {
+            this->resultado = data;
+        }
+        this->error = err::Exito();
+    }
+
+    template<typename T>
+    Resultado<T>::Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept{
+        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
+            this->resultado = data;
+        } else if constexpr (std::is_pointer<T>::value) {
+            this->resultado = data;  
+        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
+        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
+            this->resultado = std::move(data);
+        } else {
+            this->resultado = data;
+        }
+        err::Error e(codigo,mensaje);
+        this->error = e;
+    }
+
+    template<typename T>
+    Resultado<T>::~Resultado() noexcept{
+        if constexpr (std::is_pointer<T>::value) {
+            delete resultado; 
+        }
+    }
+
+    template<typename T>
+    err::Error Resultado<T>::Error() const noexcept{
+        return this->error;
+    }
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
+        bool ok = !Error();
+        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
+            return std::make_tuple(ok ? this->resultado : T{}, error);
+        } else if (std::is_pointer<T>::value) { 
+            return std::make_tuple(ok ? std::exchange(this->resultado,nullptr) : T{}, error);
+        } else if (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
+        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
+            return std::make_tuple(ok ? std::move(this->resultado) : nullptr, error);
+        } else {
+            return std::make_tuple(ok ? this->resultado : T{}, error);
+        }
+
+    }
+
+
+    template<typename T>
+    Resultado<T>::operator bool() noexcept { return !error; }
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
+        return Consumir();
+    }
+}
 
 #endif

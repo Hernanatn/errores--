@@ -1,8 +1,12 @@
-#pragma once
+#ifndef ERROR_HPP
+#define ERROR_HPP
+
 
 #include <string>
 
-namespace Error {
+#include "utiles/Genericos.hpp"
+
+namespace err { // Declaración
     enum CodigoEstado
     {
         FATAL = -2,
@@ -50,51 +54,51 @@ namespace Error {
             return os << e.mensaje;
         }
     };
+}
 
-    Error Exito();
-    Error Fatal();
-    Error Generico();
+namespace err { //Implementación
+    inline Error::Error(Error *e){/* <HACER/> */};
 
-        Error::Error(Error *e){/* <HACER/> */};
-
-    Error::Error(CodigoEstado codigo, std::string mensaje){
+    inline Error::Error(CodigoEstado codigo, std::string mensaje){
         this->codigo = codigo;
         this->mensaje = "[" + std::to_string(codigo) + "] " + mensaje + "\n";
     };
-    void Error::agregarMensaje(std::string mensaje){
+    inline void Error::agregarMensaje(std::string mensaje){
         this->mensaje = this->mensaje.append(mensaje);
     };
 
-    std::string Error::Mensaje(){
+    inline std::string Error::Mensaje(){
         return mensaje;
     };
-    CodigoEstado Error::Codigo(){
+    inline CodigoEstado Error::Codigo(){
         return codigo;
     };
 
-    Error::operator bool(){ return (this->codigo != CodigoEstado::EXITO); };
+    inline Error::operator bool(){ return (this->codigo != CodigoEstado::EXITO); };
 
-    Error::operator std::string() const  { return mensaje ;}
-    Error::operator const char*() const  { return mensaje.c_str() ;}
-    Error::operator char*() { return const_cast<char*>(mensaje.c_str()) ;}
+    inline Error::operator std::string() const  { return mensaje ;}
+    inline Error::operator const char*() const  { return mensaje.c_str() ;}
+    inline Error::operator char*() { return const_cast<char*>(mensaje.c_str()) ;}
 
-    Error Exito(std::string mensaje ="Exito"){
+    inline Error Exito(std::string mensaje ="Exito"){
         return Error(
             CodigoEstado::EXITO,
             mensaje
         );
     }
-    Error Fatal(std::string mensaje ="Error Fatal"){
+    inline Error Fatal(std::string mensaje ="Error Fatal"){
         return Error(
             CodigoEstado::FATAL,
             mensaje
         );
     }
-    Error Generico(std::string mensaje ="Error"){
+    inline Error Generico(std::string mensaje ="Error"){
         return Error(
             CodigoEstado::ERROR,
             mensaje
         );
     }
-
 }
+
+
+#endif
