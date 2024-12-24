@@ -268,15 +268,15 @@ public:
 ```cpp
 #include "errores--.hpp"
 
-Resultado<int> dividir(int a, int b) {
+res::Resultado<int> dividir(int a, int b) {
     if (b == 0) {
-        return Resultado<int>(0, Error::ERROR, "No se puede dividir por cero");
+        return res::Resultado<int>(0, Error::ERROR, "No se puede dividir por cero");
     }
-    return Resultado<int>(a / b);
+    return res::Resultado<int>(a / b);
 }
 
 int main() {
-    Resultado<int> resultado = dividir(10, 2);
+    res::Resultado<int> resultado = dividir(10, 2);
     auto [valor, error] = resultado();
     if (error) {
         std::cout << error << std::endl;
@@ -284,7 +284,7 @@ int main() {
         std::cout << "Resultado de la división: " << valor << std::endl;
     }
 
-    Resultado<int> resultadoError = dividir(10, 0);
+    res::Resultado<int> resultadoError = dividir(10, 0);
     auto [valorError, e] = resultadoError();
     if (e) {
         std::cout << e << std::endl;
