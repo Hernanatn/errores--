@@ -412,8 +412,6 @@ int main() {
 #include <string>
 #include <vector>
 
-using namespace err;
-using namespace opc;
 
 // Simula la inicialización de un socket servidor.
 // Devuelve un `Resultado` con un identificador de socket o un error.
