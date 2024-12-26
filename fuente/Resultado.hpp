@@ -6,7 +6,7 @@
 #include <utility>
 
 #include "utiles/Genericos.hpp"
-#include "error.hpp"
+#include "Error.hpp"
 
 namespace res { //Declaración
         /**

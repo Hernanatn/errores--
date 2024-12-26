@@ -4,7 +4,6 @@
 
 #include <string>
 
-#include "utiles/Genericos.hpp"
 
 namespace err { // Declaración
     enum CodigoEstado
@@ -57,7 +56,7 @@ namespace err { // Declaración
 }
 
 namespace err { //Implementación
-    inline Error::Error(Error *e){/* <HACER/> */};
+    //inline Error::Error(Error *e){/* <HACER/> */};
 
     inline Error::Error(CodigoEstado codigo, std::string mensaje){
         this->codigo = codigo;
