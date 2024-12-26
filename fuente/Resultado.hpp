@@ -13,7 +13,7 @@ namespace res { //Declaración
     * @brief Estructura que representa el resultado de una operación.
     *
     * @tparam T Tipo del valor. Si la operación es exitosa, contiene el valor subyacente, sino un valor inicializado en cero del tipo T.
-    *  T uede ser:
+    *  T puede ser:
     * - Un valor directo (ej. `int`, `std::string`, etc.).
     * - Un puntero inteligente (`std::unique_ptr<T>` o `std::shared_ptr<T>`).
     * - Un puntero desnudo a memoria no compartida (ej. `T*`), en cuyo caso se
