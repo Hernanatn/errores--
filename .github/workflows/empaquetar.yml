@@ -1,0 +1,25 @@
+name: empaquetar
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+    - '**.hpp'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12 
+      - name: instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+      - name: execute py script 
+        run: |
+          python build/empaquetar.py
+            
