@@ -70,7 +70,7 @@ La librería implementa reglas estrictas para garantizar la seguridad de la memo
 
 ### Error
 
-La clase `Error` encapsula información sobre errores mediante un código de estado y un mensaje descriptivo. Esta abstracción permite identificar claramente el estado de una operación (éxito, error o fatal) y es extensible para casos específicos. [Referencia completa]("/documentación/Error.md").
+La clase `Error` encapsula información sobre errores mediante un código de estado y un mensaje descriptivo. Esta abstracción permite identificar claramente el estado de una operación (éxito, error o fatal) y es extensible para casos específicos. [Referencia completa](/documentación/Error.md).
 
 #### Métodos
 - `CodigoEstado Codigo()`: Devuelve el código de estado del error
@@ -93,7 +93,7 @@ namespace err {
 
 ### Opcion<T>
 
-`Opcion<T>` es un contenedor genérico que representa un valor opcional que puede estar presente o ausente. Implementa especializaciones para manejar diferentes tipos de datos de manera segura. [Referencia completa]("/documentación/Opcion.md").
+`Opcion<T>` es un contenedor genérico que representa un valor opcional que puede estar presente o ausente. Implementa especializaciones para manejar diferentes tipos de datos de manera segura. [Referencia completa](/documentación/Opcion.md).
 
 #### Métodos
 - `bool estaVacia() const noexcept`: Indica si la opción está vacía
@@ -120,7 +120,7 @@ namespace err {
 
 ### Resultado<T>
 
-`Resultado<T>` encapsula el resultado de una operación que puede ser exitosa o fallar, combinando un valor de tipo `T` con un `Error`. [Referencia completa]("/documentación/Resultado.md").
+`Resultado<T>` encapsula el resultado de una operación que puede ser exitosa o fallar, combinando un valor de tipo `T` con un `Error`. [Referencia completa](/documentación/Resultao.md.
 
 #### Métodos
 - `err::Error Error() const noexcept`: Devuelve el estado del error
@@ -144,7 +144,7 @@ namespace err {
    - Retorna nullptr en caso de error
 
 ## Documentación
-La referencia para las abstracciones, una explicación más acabada del manejo de memoria con `errores--` y más ejemplos pueden encontrarse en [/documentación]("/documentación")
+La referencia para las abstracciones, una explicación más acabada del manejo de memoria con `errores--` y más ejemplos pueden encontrarse en [/documentación](/documentación)
 
 ## Requisitos
 
@@ -154,7 +154,7 @@ La referencia para las abstracciones, una explicación más acabada del manejo d
 ## Pruebas
 La librería incluye una suite (aún en progreso) de pruebas implementada con Catch2, que verifica el comportamiento correcto de todas las abstracciones y sus especializaciones.
 
-Se puede correr el archivo provisto ([/pruebas/correr_pruebas.exe]("/pruebas/correr_pruebas.exe")) o [compilar las pruebas desde cero]("/documentación/Pruebas.md")
+Se puede correr el archivo provisto ( [/pruebas/correr_pruebas.exe](/pruebas/correr_pruebas.exe) ) o [compilar las pruebas desde cero](/documentación/Pruebas.md)
 
 
 ## Estado del Proyecto
