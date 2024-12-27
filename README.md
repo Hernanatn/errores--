@@ -154,7 +154,7 @@ La referencia para las abstracciones, una explicación más acabada del manejo d
 ## Pruebas
 La librería incluye una suite (aún en progreso) de pruebas implementada con Catch2, que verifica el comportamiento correcto de todas las abstracciones y sus especializaciones.
 
-Se puede correr el archivo provisto ( [/pruebas/correr_pruebas.exe](/pruebas/correr_pruebas.exe) ) o [compilar las pruebas desde cero](/documentación/Pruebas.md)
+Se puede correr el archivo provisto ( [/pruebas/correr_pruebas.exe](/pruebas/pruebas.exe) ) o [compilar las pruebas desde cero](/documentación/Pruebas.md)
 
 
 ## Estado del Proyecto

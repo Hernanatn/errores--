@@ -32,4 +32,4 @@ target_link_libraries(correr_pruebas PRIVATE errores-- Catch2::Catch2WithMain)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 include(CTest)
 ```
-4. correr el script `pruebas.ps1` desde la raíz del proyecto.
+4. correr el script [`pruebas.ps1`](/pruebas/compilar_pruebas.ps1) desde la raíz del proyecto.
