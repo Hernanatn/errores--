@@ -1,3 +1,6 @@
-.clangd
-.vscode
 .vs
+.vscode
+.cache
+.clangd
+build
+CMakelists.txt
