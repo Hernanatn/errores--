@@ -2,14 +2,25 @@
 #define RESULTADO_HPP
 
 #include <tuple>
-#include <memory>
 #include <utility>
 
 #include "utiles/Genericos.hpp"
 #include "Error.hpp"
 
 namespace res { //Declaración
-        /**
+    template<typename T>
+    struct ResultadoBase{
+        protected:
+            err::Error error;
+        public:
+            ResultadoBase() noexcept: error(err::EXITO) {};
+            virtual ~ResultadoBase() noexcept = default ;
+
+            err::Error Error() const noexcept {return this->error;};
+            operator bool() noexcept {return !error;};
+    };
+    
+    /**
     * @brief Estructura que representa el resultado de una operación.
     *
     * @tparam T Tipo del valor. Si la operación es exitosa, contiene el valor subyacente, sino un valor inicializado en cero del tipo T.
@@ -37,25 +48,74 @@ namespace res { //Declaración
     *   si el resultado es válido (`true`) o no (`false`).
     */
     template<typename T>
-    class Resultado{
+    struct Resultado : public ResultadoBase<T>{
         private:
             T resultado;
-            err::Error error;
-
-        protected:
+            using ResultadoBase<T>::error;
 
         public:
-            Resultado() noexcept
-            : Resultado{T{},err::EXITO, "Operación exitosa"} 
-            {};
+            Resultado() noexcept : resultado(T{}), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
 
             explicit Resultado(T data) noexcept;
             explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
             explicit Resultado(T data, err::Error error) noexcept;
 
-            err::Error Error() const noexcept;
             std::tuple<T, err::Error>Consumir() noexcept;
             ~Resultado() noexcept;
+
+            operator bool() noexcept;
+            std::tuple<T, err::Error> operator()() noexcept;
+    };
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    struct Resultado<T> : public ResultadoBase<T>{
+        private:
+            T resultado;
+            using ResultadoBase<T>::error;
+
+        public:
+            Resultado() noexcept : resultado(nullptr), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+
+            explicit Resultado(T data) noexcept;
+            
+            Resultado(const Resultado<T>&) = delete;
+            Resultado operator=(const Resultado<T>&) = delete;
+
+            Resultado(const Resultado<T>&& otro) noexcept;
+            Resultado& operator=(const Resultado<T>&& otro) noexcept;
+            
+            explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
+            explicit Resultado(T data, err::Error error) noexcept;
+
+            std::tuple<T, err::Error>Consumir() noexcept;
+            ~Resultado() noexcept;
+
+            operator bool() noexcept;
+            std::tuple<T, err::Error> operator()() noexcept;
+    };
+
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    struct Resultado<T> : public ResultadoBase<typename T::element_type>{
+        private:
+            T resultado;
+            using ResultadoBase<typename T::element_type>::error;
+
+        public:
+            Resultado() noexcept : resultado(nullptr), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+
+            explicit Resultado(T data) noexcept;
+            
+            Resultado(const Resultado<T>&) = delete;
+            Resultado operator=(const Resultado<T>&) = delete;
+
+            Resultado(const Resultado<T>&& otro) noexcept;
+            Resultado& operator=(const Resultado<T>&& otro) noexcept;
+            
+            explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
+            explicit Resultado(T data, err::Error error) noexcept;
+
+            std::tuple<T, err::Error>Consumir() noexcept;
+            ~Resultado() noexcept {};
 
             operator bool() noexcept;
             std::tuple<T, err::Error> operator()() noexcept;
@@ -64,49 +124,20 @@ namespace res { //Declaración
 
 namespace res { // Implementación
     template<typename T>
-    Resultado<T>::Resultado(T data, err::Error e) noexcept{
-        
-        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
-            this->resultado = data;
-        } else if constexpr (std::is_pointer<T>::value) {
-            this->resultado = data;  
-        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
-        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
-            this->resultado = std::move(data);
-        } else {
-            this->resultado = data;
-        }
-        this->error = e;
-    }
-
-    template<typename T>
     Resultado<T>::Resultado(T data) noexcept{
-                
-        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
-            this->resultado = data;
-        } else if constexpr (std::is_pointer<T>::value) {
-            this->resultado = data;  
-        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
-        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
-            this->resultado = std::move(data);
-        } else {
-            this->resultado = data;
-        }
+        this->resultado = data;        
         this->error = err::Exito();
     }
 
     template<typename T>
+    Resultado<T>::Resultado(T data, err::Error e) noexcept{
+        this->resultado = data;
+        this->error = e;
+    }
+
+    template<typename T>
     Resultado<T>::Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept{
-        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
-            this->resultado = data;
-        } else if constexpr (std::is_pointer<T>::value) {
-            this->resultado = data;  
-        } else if constexpr (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
-        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
-            this->resultado = std::move(data);
-        } else {
-            this->resultado = data;
-        }
+        this->resultado = data;
         err::Error e(codigo,mensaje);
         this->error = e;
     }
@@ -119,31 +150,113 @@ namespace res { // Implementación
     }
 
     template<typename T>
-    err::Error Resultado<T>::Error() const noexcept{
-        return this->error;
-    }
-
-    template<typename T>
     std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
-        bool ok = !Error();
-        if constexpr (!tiene_et<T>::value || !tiene_vt<T>::value) {
-            return std::make_tuple(ok ? this->resultado : T{}, error);
-        } else if (std::is_pointer<T>::value) { 
-            return std::make_tuple(ok ? std::exchange(this->resultado,nullptr) : T{}, error);
-        } else if (std::is_same<T, std::shared_ptr<typename T::element_type>>::value 
-        || std::is_same<T, std::unique_ptr<typename T::element_type>>::value) {
-            return std::make_tuple(ok ? std::move(this->resultado) : nullptr, error);
-        } else {
-            return std::make_tuple(ok ? this->resultado : T{}, error);
-        }
+        bool ok = !this->Error();
+        return std::make_tuple(ok ? this->resultado : T{}, error);
+    }
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
+        return Consumir();
+    }
 
+    /*
+     *  Especialización para Punteros Desnudos
+     */
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
+        this->data = std::exchange(otro->data, nullptr);
+        this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
+        if (this != &otro){
+            this->data = std::exchange(otro->data, nullptr);
+            this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
+        }
+        return *this;
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado(T data) noexcept{
+        this->resultado = data;        
+        this->error = err::Exito();
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado(T data, err::Error e) noexcept{
+        this->resultado = data;
+        this->error = e;
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept{
+        this->resultado = data;
+        err::Error e(codigo,mensaje);
+        this->error = e;
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::~Resultado() noexcept{
+        delete resultado; 
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
+        bool ok = !this->Error();
+        return std::make_tuple(ok ? std::exchange(this->resultado,nullptr) : nullptr, error);
+
+    }
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
+        return Consumir();
     }
 
 
-    template<typename T>
-    Resultado<T>::operator bool() noexcept { return !error; }
+    /*
+     *  Especialización para Punteros Inteligentes
+     */
 
-    template<typename T>
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>::Resultado(T data) noexcept{
+        this->resultado = std::move(data);
+        this->error = err::Exito();
+    }
+
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>::Resultado(T data, err::Error e) noexcept{
+        this->resultado = std::move(data);
+        this->error = e;
+    }
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>::Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept{
+        this->resultado = std::move(data);
+        err::Error e(codigo,mensaje);
+        this->error = e;
+    }
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
+        this->data = std::move(std::exchange(otro->data, nullptr));
+        this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
+    }
+
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
+        if (this != &otro){
+            this->data = std::move(std::exchange(otro->data, nullptr));
+            this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
+        }
+        return *this;
+    }
+
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
+        bool ok = !this->Error();
+        return std::make_tuple(ok ? std::move(this->resultado) : nullptr, std::exchange(error,err::Generico("Resultado movido.")));
+       
+    }
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
     std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
         return Consumir();
     }
