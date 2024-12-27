@@ -12,14 +12,20 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: setup python
+      - name: garantizar python
         uses: actions/setup-python@v2
         with:
           python-version: 3.12 
       - name: instalar dependencias
         run: |
           python -m pip install --upgrade pip
-      - name: execute py script 
+      - name: empaquetar 
         run: |
           python build/empaquetar.py
-            
+      - name: commitear y pushear
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "actualiza empaquetado"
+          git push
