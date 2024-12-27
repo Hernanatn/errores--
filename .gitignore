@@ -2,5 +2,5 @@
 .vscode
 .cache
 .clangd
-build
 CMakelists.txt
+*-build
