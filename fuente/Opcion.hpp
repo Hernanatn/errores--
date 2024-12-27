@@ -7,7 +7,7 @@
 #include "utiles/Genericos.hpp"
  
 namespace opc { // Declaración
-    
+    // [DEBUG] GITHUB WORKFLOWS
     template<typename T>
     class OpcionBase {
     protected:
