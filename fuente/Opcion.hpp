@@ -10,6 +10,7 @@ namespace opc { // Declaración
     // [DEBUG] GITHUB WORKFLOWS
     // [DEBUG] GITHUB v2
     // [DEBUG] GITHUB v3
+    // [DEBUG] GITHUB v4
     template<typename T>
     class OpcionBase {
     protected:
