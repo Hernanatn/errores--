@@ -10,6 +10,7 @@
 [![Licencia: CC BY-NC 4.0](https://img.shields.io/badge/Licencia-CC_BY--SA_4.0-lightgrey.svg)](LICENSE)
 
 1. [Introducción](#errores--)
+    - [Uso](#uso)
 2. [Novedades en v0.2.0-alpha](#novedades-en-v020-alpha)
 3. [Manejo de Memoria](#manejo-de-memoria)
    - [Tipos de Datos Soportados](#tipos-de-datos-soportados)
@@ -28,6 +29,13 @@
    - [Manejo de Punteros Inteligentes](#manejo-de-punteros-inteligentes)
    - [Manejo de Errores](#manejo-de-errores)
 10. [Licencia](#licencia)
+
+### Uso
+La librería se puede incluir en un proyecto descargando e `#incluyendo` el archivo de encabezado [`errores--.hpp`](/errores--.hpp)
+
+```cpp
+#include "errores--.hpp"
+```
 
 ## Novedades en v0.2.0-alpha
 
@@ -120,7 +128,7 @@ namespace err {
 
 ### Resultado<T>
 
-`Resultado<T>` encapsula el resultado de una operación que puede ser exitosa o fallar, combinando un valor de tipo `T` con un `Error`. [Referencia completa](/documentación/Resultao.md.
+`Resultado<T>` encapsula el resultado de una operación que puede ser exitosa o fallar, combinando un valor de tipo `T` con un `Error`. [Referencia completa](/documentación/Resultado.md)
 
 #### Métodos
 - `err::Error Error() const noexcept`: Devuelve el estado del error
