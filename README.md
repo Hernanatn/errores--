@@ -447,7 +447,7 @@ opc::Opcion<std::string> recibirMensaje(int clienteSocket) {
 
 // Simula el envío de un mensaje al cliente.
 // Devuelve un `Error` en caso de fallo.
-er::Error enviarMensaje(int clienteSocket, const std::string& mensaje) {
+err::Error enviarMensaje(int clienteSocket, const std::string& mensaje) {
     if (clienteSocket <= 0 || mensaje.empty()) {
         return err::Generico("Error al enviar el mensaje");
     }
