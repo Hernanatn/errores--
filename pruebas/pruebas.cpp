@@ -272,5 +272,17 @@ TEST_CASE("Resultado con shared_ptr", "[resultado][smart_ptr]") {
         auto [ptr, error] = resultado();
         REQUIRE(error);
         REQUIRE(ptr == nullptr);
+        REQUIRE(0 == 1);
     }
+}
+
+int main(int argc, char* argv[]) {
+    Catch::Session session; 
+    int codigo = session.applyCommandLine(argc, argv);
+    if (codigo == 0) {
+        codigo = session.run();
+    }
+
+    // Devolver 1 si alguna prueba falló.
+    return (codigo == 0) ? 0 : 1;
 }
