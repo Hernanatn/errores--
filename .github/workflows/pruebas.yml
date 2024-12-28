@@ -12,6 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Descargar Catch2
+      run: |
+        mkdir externos
+        wget https://github.com/catchorg/Catch2/releases/download/v3.0.1/catch2-v3.0.1.zip -O extern/catch2.zip
+        unzip extern/catch2.zip -d externos/Catch2
     - name: Compilar
       run: |
         cmake -S . -B build
