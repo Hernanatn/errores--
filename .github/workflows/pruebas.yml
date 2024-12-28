@@ -14,12 +14,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: Descargar Catch2
       run: |
-        mkdir extern
-        Invoke-WebRequest -Uri https://github.com/catchorg/Catch2/releases/download/v3.0.1/catch2-v3.0.1.zip -OutFile extern/catch2.zip
-        Expand-Archive -Path extern/catch2.zip -DestinationPath extern/Catch2
+        mkdir externos
+        Invoke-WebRequest -Uri https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.1.zip -OutFile externos/catch2.zip
+        Expand-Archive -Path externos/catch2.zip -DestinationPath externos/Catch2
     - name: Compilar
       run: |
-        cmake -S . -B build -DCATCH2_DIR="${GITHUB_WORKSPACE}/extern/Catch2"
+        cmake -S . -B build -DCATCH2_DIR="${GITHUB_WORKSPACE}/externos/Catch2"
         cmake --build build
     - name: EjecutarPruebas
       id: test
