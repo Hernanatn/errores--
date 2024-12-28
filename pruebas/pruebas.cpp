@@ -273,6 +273,7 @@ TEST_CASE("Resultado con shared_ptr", "[resultado][smart_ptr]") {
         REQUIRE(error);
         REQUIRE(ptr == nullptr);
         REQUIRE(0 == 1);
+        REQUIRE(0 == 1);
     }
 }
 
