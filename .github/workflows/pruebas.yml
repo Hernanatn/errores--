@@ -3,8 +3,14 @@ name: Pruebas
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**.hpp'
+      - '**.cpp'
   pull_request:
     branches: [ main ]
+    paths:
+      - '**.hpp'
+      - '**.cpp'
 
 jobs:
   Pruebas:
