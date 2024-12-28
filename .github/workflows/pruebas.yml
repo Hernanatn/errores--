@@ -7,19 +7,19 @@ on:
     branches: [ main ]
 
 jobs:
-  construir-y-probar:
+  Pruebas:
     runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
     - name: Descargar Catch2
       run: |
-        mkdir externos
-        wget https://github.com/catchorg/Catch2/releases/download/v3.0.1/catch2-v3.0.1.zip -O extern/catch2.zip
-        unzip extern/catch2.zip -d externos/Catch2
+        mkdir extern
+        Invoke-WebRequest -Uri https://github.com/catchorg/Catch2/releases/download/v3.0.1/catch2-v3.0.1.zip -OutFile extern/catch2.zip
+        Expand-Archive -Path extern/catch2.zip -DestinationPath extern/Catch2
     - name: Compilar
       run: |
-        cmake -S . -B build
+        cmake -S . -B build -DCATCH2_DIR="${GITHUB_WORKSPACE}/extern/Catch2"
         cmake --build build
     - name: EjecutarPruebas
       id: test
