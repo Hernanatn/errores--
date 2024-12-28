@@ -3,7 +3,7 @@ param(
 )
 cmake -S . -B build;
 cmake --build build;
-Remove-Item -Path "pruebas/correr_pruebas.exe";
+Remove-Item -Path "pruebas/pruebas.exe";
 Move-Item -Path "build/correr_pruebas.exe" -Destination "pruebas/pruebas.exe";
 
 if($correr){
