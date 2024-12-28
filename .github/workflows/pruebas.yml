@@ -45,18 +45,3 @@ jobs:
             description: output,
             context: 'Resultados de las pruebas'
           });
-    - name: Determinar Estado de la Prueba
-      run: |
-        if [[ ${{ steps.test.outcome }} == 'success' ]]; then
-          echo "exitoso" > estado_prueba.txt
-        else
-          # Agrega tu lógica aquí para determinar "mediocre" o "fallido" 
-          # en función de la salida de la prueba
-          # Por ejemplo, verifica el número de pruebas fallidas en la salida
-          echo "fallido" > estado_prueba.txt 
-        fi
-    - name: Subir Artefacto
-      uses: actions/upload-artifact@v3
-      with:
-        name: estado-prueba
-        path: estado_prueba.txt
