@@ -1,0 +1,39 @@
+name: Pruebas
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  construir-y-probar:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Compilar
+      run: |
+        cmake -S . -B build
+        cmake --build build
+    - name: EjecutarPruebas
+      id: test
+      run: |
+        build\correr_pruebas.exe -s
+    - name: VerificarResultadosPruebas
+      if: steps.test.outcome != 'success'
+      run: |
+        echo "::set-output name=test_output::$(cat $GITHUB_WORKSPACE/build/Testing/Temporary/LastTest.log)"
+    - name: EstablecerEstadoPR
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const result = ${{ steps.test.outcome }};
+          const output = result == 'success' ? 'Las pruebas pasaron correctamente' : context.workflow.steps.check_test_result.outputs.test_output;
+          github.rest.repos.createCommitStatus({
+            ...context.repo,
+            sha: context.sha,
+            state: result,
+            description: output,
+            context: 'Resultados de las pruebas'
+          });
