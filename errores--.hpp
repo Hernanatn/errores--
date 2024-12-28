@@ -597,14 +597,14 @@ namespace res { // Implementación
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
-        this->data = std::exchange(otro->data, nullptr);
+        this->resultado = std::exchange(otro->resultado, nullptr);
         this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
     }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
         if (this != &otro){
-            this->data = std::exchange(otro->data, nullptr);
+            this->resultado = std::exchange(otro->resultado, nullptr);
             this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
         }
         return *this;
@@ -669,14 +669,14 @@ namespace res { // Implementación
     }
     template <typename T> requires utiles::genericos::puntero_inteligente<T>
     Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
-        this->data = std::move(std::exchange(otro->data, nullptr));
+        this->resultado = std::move(std::exchange(otro->resultado, nullptr));
         this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
     }
 
     template <typename T> requires utiles::genericos::puntero_inteligente<T>
     Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
         if (this != &otro){
-            this->data = std::move(std::exchange(otro->data, nullptr));
+            this->resultado = std::move(std::exchange(otro->resultado, nullptr));
             this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
         }
         return *this;
