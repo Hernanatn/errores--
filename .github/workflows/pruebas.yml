@@ -18,11 +18,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Descargar Catch2
-      run: |
-        mkdir externos
-        Invoke-WebRequest -Uri https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.1.zip -OutFile externos/catch2.zip
-        Expand-Archive -Path externos/catch2.zip -DestinationPath externos/Catch2
+     - name: Clonar Catch2
+      run: git clone https://github.com/catchorg/Catch2.git externos/Catch2
     - name: Compilar
       run: |
         cmake -S . -B build -DCATCH2_DIR="${GITHUB_WORKSPACE}/externos/Catch2"
