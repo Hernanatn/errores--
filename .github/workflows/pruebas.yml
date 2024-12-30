@@ -22,12 +22,12 @@ jobs:
       run: git clone https://github.com/catchorg/Catch2.git externos/Catch2
     - name: Compilar
       run: |
-        cmake -S . -B build -DCATCH2_DIR="${GITHUB_WORKSPACE}/externos/Catch2"
-        cmake --build build
+        cmake -S . -B compilar -DCATCH2_DIR="${GITHUB_WORKSPACE}/externos/Catch2"
+        cmake --build compilar
     - name: EjecutarPruebas
       id: test
       run: |
-        build\correr_pruebas.exe -s
+        compilar\correr_pruebas.exe -s
     - name: VerificarResultadosPruebas
       if: steps.test.outcome != 'success'
       run: |

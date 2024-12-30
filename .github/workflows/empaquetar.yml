@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
       - name: empaquetar 
         run: |
-          python build/empaquetar.py
+          python compilar/empaquetar.py
       - name: commitear y pushear
         run: |
           git config user.name "github-actions[bot]"
