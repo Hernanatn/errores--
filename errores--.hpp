@@ -85,7 +85,7 @@ namespace err { // Declaración
      * flujos de salida estándar como `std::cout`.
      */
     struct Error{
-        private:
+        protected:
         CodigoEstado codigo;
         std::string mensaje;
         public:
@@ -111,7 +111,6 @@ namespace err { // Declaración
 }
 
 namespace err { //Implementación
-    //inline Error::Error(Error *e){/* <HACER/> */};
 
     inline Error::Error(CodigoEstado codigo, std::string mensaje){
         this->codigo = codigo;
