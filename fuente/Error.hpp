@@ -30,7 +30,7 @@ namespace err { // Declaración
      * flujos de salida estándar como `std::cout`.
      */
     struct Error{
-        private:
+        protected:
         CodigoEstado codigo;
         std::string mensaje;
         public:
