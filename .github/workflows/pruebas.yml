@@ -24,29 +24,13 @@ jobs:
     - name: Instalar Ninja
       run: |
         choco install ninja
-        
-    - name: Instalar Clang 19.1.4
+    
+    - name: Configurar Clang y CMake
       run: |
-        mkdir clang-19.1.4
-        cd clang-19.1.4
-        curl -LO https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.4/clang+llvm-19.1.4-x86_64-windows-msvc.zip
-        
-        powershell -Command "Expand-Archive -Path clang+llvm-19.1.4-x86_64-windows-msvc.zip -DestinationPath ."
-        echo "LLVM and Clang installed to $(pwd)"
-
-    - name: Configurar CMake con Clang 19.1.4 y C++20
-      run: |
-        set CXX=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang++
-        set CC=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang
-        echo "CXX and CC are set to Clang 19.1.4"
-        
-        # Set environment variables for Clang 19.1.4
-        $env:CLANG_BIN = "$PWD\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin"
-        $env:PATH = "$env:CLANG_BIN;$env:PATH"
-        echo "Clang binaries are added to the PATH"
-
-        # Configure the project with CMake using Clang and C++20
-        cmake -S . -B build -DCMAKE_C_COMPILER="$env:CLANG_BIN\clang" -DCMAKE_CXX_COMPILER="$env:CLANG_BIN\clang++" -DCMAKE_CXX_STANDARD=20 -G "Ninja"
+        choco install llvm
+        echo "CMake version: $(cmake --version)"
+        echo "Clang version: $(clang --version)"
+        cmake -S . -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++  -DCMAKE_CXX_STANDARD=20 -G "Ninja"
 
     - name: Compilar
       run: |

@@ -214,7 +214,6 @@ TEST_CASE("Resultado con punteros desnudos", "[resultado][punteros]") {
     }
 }
 
-
 TEST_CASE("Resultado con unique_ptr", "[resultado][smart_ptr]") {
     SECTION("Construcción y consumo exitoso") {
         auto datos = std::make_unique<DatosPrueba>(42);
