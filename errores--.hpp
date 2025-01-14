@@ -145,7 +145,6 @@ namespace err { //Implementación
 }
 
 #endif
-
 #ifndef OPCION_HPP
 #define OPCION_HPP
 
