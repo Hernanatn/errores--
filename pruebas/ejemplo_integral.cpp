@@ -52,7 +52,6 @@ void cerrarSocket(std::unique_ptr<int> socketID) {
     std::cout << "Socket " << *socketID << " cerrado." << std::endl;
 }
 
-
 // Implementación del servidor de eco.
 void servidorEco(int puerto) {
     auto [servidorSocket, errorServidor] = inicializarServidor(puerto)();
