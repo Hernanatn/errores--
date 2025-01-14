@@ -1,0 +1,10 @@
+^C:\USERS\WASAB\DOCUMENTS\PROGRAMACION\C++\ERRORES--\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/wasab/Documents/Programacion/C++/Errores-- -BC:/Users/wasab/Documents/Programacion/C++/Errores--/build --check-stamp-file C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,644 @@
+[
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src -IC:/Users/wasab/Documents/Programacion/C++/Errores--/fuente -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -o CMakeFiles\\correr_pruebas.dir\\pruebas\\pruebas.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\pruebas\\pruebas.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\pruebas\\pruebas.cpp",
+  "output": "CMakeFiles\\correr_pruebas.dir\\pruebas\\pruebas.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\catch_chronometer.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\catch_chronometer.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\catch_chronometer.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\catch_chronometer.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_analyse.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_analyse.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_analyse.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_analyse.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_stats.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_stats.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\benchmark\\detail\\catch_stats.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_stats.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generator_exception.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generator_exception.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generator_exception.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generator_exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generators.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generators.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators_random.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generators_random.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\generators\\catch_generators_random.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators_random.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_automake.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_automake.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_automake.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_automake.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_common_base.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_common_base.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_common_base.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_common_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_compact.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_compact.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_compact.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_compact.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_console.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_console.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_console.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_console.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_cumulative_base.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_cumulative_base.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_cumulative_base.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_cumulative_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_event_listener.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_event_listener.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_event_listener.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_event_listener.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_helpers.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_helpers.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_helpers.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_helpers.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_json.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_json.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_json.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_json.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_junit.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_junit.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_junit.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_junit.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_multi.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_multi.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_multi.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_multi.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_registrars.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_registrars.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_registrars.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_registrars.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_sonarqube.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_sonarqube.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_sonarqube.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_sonarqube.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_streaming_base.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_streaming_base.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_streaming_base.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_streaming_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_tap.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_tap.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_tap.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_tap.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_teamcity.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_teamcity.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_teamcity.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_teamcity.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_xml.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_xml.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\reporters\\catch_reporter_xml.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_xml.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_capture.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_capture.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_capture.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_capture.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_config.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_config.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_config.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_config.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_exception.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_exception.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_exception.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_reporter.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_reporter.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_testcase.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_testcase.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\interfaces\\catch_interfaces_testcase.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_testcase.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_approx.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_approx.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_approx.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_approx.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_assertion_result.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_assertion_result.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_assertion_result.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_assertion_result.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_config.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_config.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_config.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_config.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_get_random_seed.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_get_random_seed.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_get_random_seed.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_get_random_seed.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_message.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_message.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_message.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_message.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_registry_hub.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_registry_hub.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_registry_hub.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_registry_hub.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_session.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_session.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_session.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_session.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tag_alias_autoregistrar.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_tag_alias_autoregistrar.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_tag_alias_autoregistrar.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tag_alias_autoregistrar.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_case_info.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_test_case_info.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_test_case_info.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_case_info.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_spec.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_test_spec.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_test_spec.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_spec.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_timer.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_timer.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_timer.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_timer.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tostring.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_tostring.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_tostring.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tostring.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_totals.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_totals.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_totals.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_totals.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_translate_exception.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_translate_exception.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_translate_exception.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_translate_exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_version.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_version.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\catch_version.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_version.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_assertion_handler.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_assertion_handler.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_assertion_handler.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_assertion_handler.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_case_insensitive_comparisons.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_case_insensitive_comparisons.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_case_insensitive_comparisons.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_case_insensitive_comparisons.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_clara.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_clara.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_clara.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_clara.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_commandline.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_commandline.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_commandline.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_commandline.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_console_colour.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_console_colour.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_console_colour.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_console_colour.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_context.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_context.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_context.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_context.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debug_console.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_debug_console.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_debug_console.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debug_console.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debugger.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_debugger.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_debugger.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debugger.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_decomposer.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_decomposer.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_decomposer.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_decomposer.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enforce.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_enforce.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_enforce.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enforce.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enum_values_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_enum_values_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_enum_values_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enum_values_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_errno_guard.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_errno_guard.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_errno_guard.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_errno_guard.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_exception_translator_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_exception_translator_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_exception_translator_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_exception_translator_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_fatal_condition_handler.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_fatal_condition_handler.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_fatal_condition_handler.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_fatal_condition_handler.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_floating_point_helpers.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_floating_point_helpers.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_floating_point_helpers.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_floating_point_helpers.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_getenv.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_getenv.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_getenv.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_getenv.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_istream.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_istream.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_istream.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_istream.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_jsonwriter.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_jsonwriter.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_jsonwriter.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_jsonwriter.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_lazy_expr.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_lazy_expr.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_lazy_expr.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_lazy_expr.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_leak_detector.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_leak_detector.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_leak_detector.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_leak_detector.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_list.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_list.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_list.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_list.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_message_info.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_message_info.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_message_info.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_message_info.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_output_redirect.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_output_redirect.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_output_redirect.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_output_redirect.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_parse_numbers.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_parse_numbers.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_parse_numbers.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_parse_numbers.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_polyfills.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_polyfills.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_polyfills.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_polyfills.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_number_generator.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_random_number_generator.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_random_number_generator.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_number_generator.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_seed_generation.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_random_seed_generation.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_random_seed_generation.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_seed_generation.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reporter_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reporter_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_spec_parser.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reporter_spec_parser.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reporter_spec_parser.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_spec_parser.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reusable_string_stream.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reusable_string_stream.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_reusable_string_stream.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reusable_string_stream.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_run_context.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_run_context.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_run_context.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_run_context.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_section.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_section.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_section.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_section.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_singletons.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_singletons.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_singletons.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_singletons.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_source_line_info.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_source_line_info.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_source_line_info.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_source_line_info.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_startup_exception_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_startup_exception_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_startup_exception_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_startup_exception_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stdstreams.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_stdstreams.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_stdstreams.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stdstreams.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_string_manip.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_string_manip.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_string_manip.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_string_manip.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stringref.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_stringref.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_stringref.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stringref.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_tag_alias_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_tag_alias_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_tag_alias_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_tag_alias_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_info_hasher.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_info_hasher.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_info_hasher.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_info_hasher.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_registry_impl.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_registry_impl.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_registry_impl.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_registry_impl.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_tracker.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_tracker.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_case_tracker.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_tracker.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_failure_exception.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_failure_exception.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_failure_exception.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_failure_exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_registry.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_registry.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_registry.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_registry.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_spec_parser.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_spec_parser.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_test_spec_parser.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_spec_parser.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_textflow.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_textflow.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_textflow.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_textflow.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_uncaught_exceptions.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_uncaught_exceptions.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_uncaught_exceptions.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_uncaught_exceptions.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_wildcard_pattern.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_wildcard_pattern.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_wildcard_pattern.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_wildcard_pattern.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_xmlwriter.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_xmlwriter.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_xmlwriter.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_xmlwriter.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_container_properties.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_container_properties.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_container_properties.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_container_properties.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_exception.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_exception.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_exception.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_exception.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_floating_point.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_floating_point.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_floating_point.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_floating_point.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_predicate.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_predicate.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_predicate.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_predicate.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_quantifiers.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_quantifiers.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_quantifiers.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_quantifiers.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_string.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_string.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_string.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_string.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_templated.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_templated.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\catch_matchers_templated.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_templated.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\internal\\catch_matchers_impl.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\internal\\catch_matchers_impl.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\matchers\\internal\\catch_matchers_impl.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\internal\\catch_matchers_impl.cpp.obj"
+},
+{
+  "directory": "C:/Users/wasab/Documents/Programacion/C++/Errores--/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe -IC:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/src/catch2/.. -IC:/Users/wasab/Documents/Programacion/C++/Errores--/build/catch2-build/generated-includes -g -std=gnu++20 -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -o catch2-build\\src\\CMakeFiles\\Catch2WithMain.dir\\catch2\\internal\\catch_main.cpp.obj -c C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_main.cpp",
+  "file": "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\externos\\Catch2\\src\\catch2\\internal\\catch_main.cpp",
+  "output": "catch2-build\\src\\CMakeFiles\\Catch2WithMain.dir\\catch2\\internal\\catch_main.cpp.obj"
+}
+]

@@ -1,0 +1,796 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Versi├│n de MSBuild 17.12.12+1cce77968 para .NET Framework
+      Compilaci├│n iniciada a las 14/1/2025 15:14:20.
+      
+      Proyecto "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:01.76
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/3.31.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Versi├│n de MSBuild 17.12.12+1cce77968 para .NET Framework
+      Compilaci├│n iniciada a las 14/1/2025 15:14:22.
+      
+      Proyecto "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\3.31.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:01.19
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/3.31.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-0fzybd"
+      binary: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-0fzybd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-0fzybd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0dca2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.12.12+1cce77968 para .NET Framework
+        Compilaci├│n iniciada a las 14/1/2025 15:14:23.
+        
+        Proyecto "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\cmTC_0dca2.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_0dca2.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\".
+          Creando directorio "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0dca2.dir\\Debug\\\\" /Fd"cmTC_0dca2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0dca2.dir\\Debug\\\\" /Fd"cmTC_0dca2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\cmTC_0dca2.exe" /INCREMENTAL /ILK:"cmTC_0dca2.dir\\Debug\\cmTC_0dca2.ilk" /NOLOGO /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-0fzybd/Debug/cmTC_0dca2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-0fzybd/Debug/cmTC_0dca2.lib" /MACHINE:X64  /machine:x64 cmTC_0dca2.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_0dca2.vcxproj -> C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\cmTC_0dca2.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\cmTC_0dca2.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\cmTC_0dca2.write.1u.tlog" "cmTC_0dca2.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" no se reconoce como un comando interno o externo,
+          programa o archivo por lotes ejecutable.
+          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\cmTC_0dca2.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\cmTC_0dca2.write.1u.tlog" "cmTC_0dca2.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\Debug\\cmTC_0dca2.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\cmTC_0dca2.write.1u.tlog" "cmTC_0dca2.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_0dca2.dir\\Debug\\cmTC_0dca2.tlog\\cmTC_0dca2.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0fzybd\\cmTC_0dca2.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.09
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.42.34435.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-urwb5n"
+      binary: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-urwb5n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-urwb5n'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e9918.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.12.12+1cce77968 para .NET Framework
+        Compilaci├│n iniciada a las 14/1/2025 15:14:25.
+        
+        Proyecto "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\cmTC_e9918.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_e9918.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\".
+          Creando directorio "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e9918.dir\\Debug\\\\" /Fd"cmTC_e9918.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e9918.dir\\Debug\\\\" /Fd"cmTC_e9918.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\cmTC_e9918.exe" /INCREMENTAL /ILK:"cmTC_e9918.dir\\Debug\\cmTC_e9918.ilk" /NOLOGO /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-urwb5n/Debug/cmTC_e9918.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-urwb5n/Debug/cmTC_e9918.lib" /MACHINE:X64  /machine:x64 cmTC_e9918.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e9918.vcxproj -> C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\cmTC_e9918.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\cmTC_e9918.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\cmTC_e9918.write.1u.tlog" "cmTC_e9918.dir\\Debug\\vcpkg.applocal.log"
+          "pwsh.exe" no se reconoce como un comando interno o externo,
+          programa o archivo por lotes ejecutable.
+          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\cmTC_e9918.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\cmTC_e9918.write.1u.tlog" "cmTC_e9918.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\Debug\\cmTC_e9918.exe" "C:\\Users\\wasab\\Documents\\Programacion\\C++\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\cmTC_e9918.write.1u.tlog" "cmTC_e9918.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_e9918.dir\\Debug\\cmTC_e9918.tlog\\cmTC_e9918.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\wasab\\Documents\\Programacion\\C++\\Errores--\\build\\CMakeFiles\\CMakeScratch\\TryCompile-urwb5n\\cmTC_e9918.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.91
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.42.34435.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/msys64/ucrt64/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/3.31.3/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/ucrt64/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/3.31.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9"
+      binary: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9'
+        
+        Run Build Command(s): C:/Users/wasab/AppData/Local/Microsoft/WinGet/Links/ninja.exe -v cmTC_2078b
+        [1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_2078b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
+        clang version 19.1.4
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/ucrt64/bin
+         (in-process)
+         "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9 -v -fcoverage-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9 -resource-dir C:/msys64/ucrt64/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_2078b.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/19/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"
+        clang -cc1 version 19.1.4 based upon LLVM 19.1.4 default target x86_64-w64-windows-gnu\x0d
+        ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/msys64/ucrt64/lib/clang/19/include\x0d
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include\x0d
+         C:/msys64/ucrt64/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -o cmTC_2078b.exe -Wl,--out-implib,libcmTC_2078b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.4
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/ucrt64/bin
+         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_2078b.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2078b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.43.1\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/ucrt64/lib/clang/19/include]
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include]
+          add: [C:/msys64/ucrt64/include]
+        end of search list found
+        collapse include dir [C:/msys64/ucrt64/lib/clang/19/include] ==> [C:/msys64/ucrt64/lib/clang/19/include]
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include]
+        collapse include dir [C:/msys64/ucrt64/include] ==> [C:/msys64/ucrt64/include]
+        implicit include dirs: [C:/msys64/ucrt64/lib/clang/19/include;C:/msys64/ucrt64/x86_64-w64-mingw32/include;C:/msys64/ucrt64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/wasab/AppData/Local/Microsoft/WinGet/Links/ninja.exe -v cmTC_2078b]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_2078b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"]
+        ignore line: [clang version 19.1.4]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:/msys64/ucrt64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9 -v -fcoverage-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-p75xp9 -resource-dir C:/msys64/ucrt64/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_2078b.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/lib/clang/19/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCCompilerABI.c"]
+        ignore line: [clang -cc1 version 19.1.4 based upon LLVM 19.1.4 default target x86_64-w64-windows-gnu\x0d]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"\x0d]
+        ignore line: [#include "..." search starts here:\x0d]
+        ignore line: [#include <...> search starts here:\x0d]
+        ignore line: [ C:/msys64/ucrt64/lib/clang/19/include\x0d]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include\x0d]
+        ignore line: [ C:/msys64/ucrt64/include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang.exe  -v -Wl -v CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj -o cmTC_2078b.exe -Wl --out-implib libcmTC_2078b.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [clang version 19.1.4]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_2078b.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2078b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o\x0d]
+          arg [C:/msys64/ucrt64/bin/ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_2078b.exe] ==> ignore
+          arg [C:/msys64/ucrt64/lib/crt2.o] ==> obj [C:/msys64/ucrt64/lib/crt2.o]
+          arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+          arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LC:/msys64/ucrt64/lib] ==> dir [C:/msys64/ucrt64/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_2078b.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_2078b.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        linker tool for 'C': C:/msys64/ucrt64/bin/ld
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse library dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+        collapse library dir [C:/msys64/ucrt64/x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [C:/msys64/ucrt64/lib] ==> [C:/msys64/ucrt64/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib;C:/msys64/ucrt64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/msys64/ucrt64/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.43.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy"
+      binary: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy'
+        
+        Run Build Command(s): C:/Users/wasab/AppData/Local/Microsoft/WinGet/Links/ninja.exe -v cmTC_e41d7
+        [1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_e41d7.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+        clang version 19.1.4
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/ucrt64/bin
+         (in-process)
+         "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy -v -fcoverage-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy -resource-dir C:/msys64/ucrt64/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_e41d7.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/backward -internal-isystem C:/msys64/ucrt64/lib/clang/19/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+        clang -cc1 version 19.1.4 based upon LLVM 19.1.4 default target x86_64-w64-windows-gnu
+        ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/backward"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/backward"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/backward"
+        ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward
+         C:/msys64/ucrt64/include/c++/14.2.0
+         C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/include/c++/14.2.0/backward
+         C:/msys64/ucrt64/lib/clang/19/include
+         C:/msys64/ucrt64/x86_64-w64-mingw32/include
+         C:/msys64/ucrt64/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e41d7.exe -Wl,--out-implib,libcmTC_e41d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 19.1.4
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/ucrt64/bin
+         "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_e41d7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_e41d7.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.43.1\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++]
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0]
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward]
+          add: [C:/msys64/ucrt64/include/c++/14.2.0]
+          add: [C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/include/c++/14.2.0/backward]
+          add: [C:/msys64/ucrt64/lib/clang/19/include]
+          add: [C:/msys64/ucrt64/x86_64-w64-mingw32/include]
+          add: [C:/msys64/ucrt64/include]
+        end of search list found
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++]
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0]
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward]
+        collapse include dir [C:/msys64/ucrt64/include/c++/14.2.0] ==> [C:/msys64/ucrt64/include/c++/14.2.0]
+        collapse include dir [C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/include/c++/14.2.0/backward] ==> [C:/msys64/ucrt64/include/c++/14.2.0/backward]
+        collapse include dir [C:/msys64/ucrt64/lib/clang/19/include] ==> [C:/msys64/ucrt64/lib/clang/19/include]
+        collapse include dir [C:/msys64/ucrt64/x86_64-w64-mingw32/include] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/include]
+        collapse include dir [C:/msys64/ucrt64/include] ==> [C:/msys64/ucrt64/include]
+        implicit include dirs: [C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++;C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0;C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32;C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward;C:/msys64/ucrt64/include/c++/14.2.0;C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32;C:/msys64/ucrt64/include/c++/14.2.0/backward;C:/msys64/ucrt64/lib/clang/19/include;C:/msys64/ucrt64/x86_64-w64-mingw32/include;C:/msys64/ucrt64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/wasab/AppData/Local/Microsoft/WinGet/Links/ninja.exe -v cmTC_e41d7]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_e41d7.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [clang version 19.1.4]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:/msys64/ucrt64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy -v -fcoverage-compilation-dir=C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-c6p8dy -resource-dir C:/msys64/ucrt64/lib/clang/19 -dependency-file "CMakeFiles\\\\cmTC_e41d7.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0 -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/include/c++/14.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++ -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/backward -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/x86_64-w64-mingw32 -internal-isystem C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/backward -internal-isystem C:/msys64/ucrt64/lib/clang/19/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/ucrt64/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [clang -cc1 version 19.1.4 based upon LLVM 19.1.4 default target x86_64-w64-windows-gnu]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2.0/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14.2/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/g++-v14/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/x86_64-w64-mingw32/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include/c++/14.2.0/backward]
+        ignore line: [ C:/msys64/ucrt64/include/c++/14.2.0]
+        ignore line: [ C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/include/c++/14.2.0/backward]
+        ignore line: [ C:/msys64/ucrt64/lib/clang/19/include]
+        ignore line: [ C:/msys64/ucrt64/x86_64-w64-mingw32/include]
+        ignore line: [ C:/msys64/ucrt64/include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e41d7.exe -Wl --out-implib libcmTC_e41d7.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [clang version 19.1.4]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/ucrt64/bin]
+        link line: [ "C:/msys64/ucrt64/bin/ld" -m i386pep -Bdynamic -o cmTC_e41d7.exe C:/msys64/ucrt64/lib/crt2.o C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/msys64/ucrt64/x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/ucrt64/lib -v CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_e41d7.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o\x0d]
+          arg [C:/msys64/ucrt64/bin/ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_e41d7.exe] ==> ignore
+          arg [C:/msys64/ucrt64/lib/crt2.o] ==> obj [C:/msys64/ucrt64/lib/crt2.o]
+          arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+          arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LC:/msys64/ucrt64/lib] ==> dir [C:/msys64/ucrt64/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e41d7.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_e41d7.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/ucrt64/bin/ld
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse library dir [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0]
+        collapse library dir [C:/msys64/ucrt64/x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [C:/msys64/ucrt64/lib] ==> [C:/msys64/ucrt64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/x86_64-w64-mingw32/mingw/lib;C:/msys64/ucrt64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/msys64/ucrt64/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.43.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "externos/Catch2/CMake/CatchMiscFunctions.cmake:12 (check_cxx_compiler_flag)"
+      - "externos/Catch2/CMake/CatchMiscFunctions.cmake:120 (add_cxx_flag_if_supported_to_targets)"
+      - "externos/Catch2/src/CMakeLists.txt:352 (add_build_reproducibility_settings)"
+    checks:
+      - "Performing Test HAVE_FLAG__ffile_prefix_map_C__Users_wasab_Documents_Programacion_C___Errores___externos_Catch2__"
+    directories:
+      source: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-2mayfr"
+      binary: "C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-2mayfr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/ucrt64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -static-libgcc -static-libstdc++"
+      CMAKE_MODULE_PATH: "C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/extras;C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/CMake"
+    buildResult:
+      variable: "HAVE_FLAG__ffile_prefix_map_C__Users_wasab_Documents_Programacion_C___Errores___externos_Catch2__"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-2mayfr'
+        
+        Run Build Command(s): C:/Users/wasab/AppData/Local/Microsoft/WinGet/Links/ninja.exe -v cmTC_b62d7
+        [1/2] C:\\msys64\\ucrt64\\bin\\clang++.exe -DHAVE_FLAG__ffile_prefix_map_C__Users_wasab_Documents_Programacion_C___Errores___externos_Catch2__  -std=gnu++20   -ffile-prefix-map=C:/Users/wasab/Documents/Programacion/C++/Errores--/externos/Catch2/= -MD -MT CMakeFiles/cmTC_b62d7.dir/src.cxx.obj -MF CMakeFiles\\cmTC_b62d7.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_b62d7.dir/src.cxx.obj -c C:/Users/wasab/Documents/Programacion/C++/Errores--/build/CMakeFiles/CMakeScratch/TryCompile-2mayfr/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\clang++.exe  -static-libgcc -static-libstdc++ CMakeFiles/cmTC_b62d7.dir/src.cxx.obj -o cmTC_b62d7.exe -Wl,--out-implib,libcmTC_b62d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
