@@ -11,7 +11,7 @@ endif()
 add_library(errores-- INTERFACE) 
 target_include_directories(errores-- INTERFACE fuente)
 
-set(CATCH2_DIR "${CMAKE_SOURCE_DIR}/../Catch2")
+set(CATCH2_DIR "${CMAKE_SOURCE_DIR}/externos/Catch2")
 add_subdirectory(${CATCH2_DIR} ${CMAKE_BINARY_DIR}/catch2-build)
 
 
