@@ -761,5 +761,4 @@ namespace res { // Implementación
 }
 
 #endif
-
 #endif
