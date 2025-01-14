@@ -20,21 +20,41 @@ jobs:
     - uses: actions/checkout@v3
       with:
         submodules: 'true'
-    - name: Configurar CMake
+
+    - name: Instalar Clang 19.1.4
       run: |
-        cmake -S . -B build
+        # Download and install LLVM/Clang 19.1.4 from the official LLVM website
+        mkdir clang-19.1.4
+        cd clang-19.1.4
+        curl -LO https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.4/clang+llvm-19.1.4-x86_64-windows-msvc.tar.xz
+        tar -xf clang+llvm-19.1.4-x86_64-windows-msvc.tar.xz
+        echo "LLVM and Clang installed to $(pwd)"
+
+    - name: Configurar CMake con Clang 19.1.4 y C++20
+      run: |
+        # Set environment variables for Clang 19.1.4
+        set CXX=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang++
+        set CC=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang
+        echo "CXX and CC are set to Clang 19.1.4"
+
+        # Configure the project with CMake using Clang and C++20
+        cmake -S . -B build -DCMAKE_C_COMPILER=%CC% -DCMAKE_CXX_COMPILER=%CXX% -DCMAKE_CXX_STANDARD=20
+
     - name: Compilar
       run: |
         cmake --build build
+
     - name: Ejecutar Pruebas
       id: ejecutar_pruebas
       run: |
         build\correr_pruebas.exe -s
+
     - name: Publicar Resultados de Pruebas (en caso de fallos)
       if: failure()
       run: |
         echo "Resultados de las pruebas:"
         type build\Testing\Temporary\LastTest.log
+
     - name: Actualizar Descripción de PR o Commit
       uses: actions/github-script@v6
       with:
