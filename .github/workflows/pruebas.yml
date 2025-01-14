@@ -51,24 +51,27 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          // Determinar el resultado de las pruebas
-          const testOutcome = (steps.ejecutar_pruebas.outcome === 'success') ? 
-                              '✔ Todas las pruebas pasaron correctamente.' : 
+          const core = require('@actions/core');
+          const github = require('@actions/github');
+          
+          // Determine the outcome of the 'Ejecutar Pruebas' step
+          const testOutcome = github.context.payload.workflow_run.conclusion === 'success' ?
+                              '✔ Todas las pruebas pasaron correctamente.' :
                               '❌ Las pruebas fallaron.';
           const comment = `Resultado de las pruebas:\n\n${testOutcome}`;
           
-          // Actualizar la descripción del pull request si es un PR
-          if (context.payload.pull_request) {
+          // Update PR description if it's a PR
+          if (github.context.payload.pull_request) {
             await github.rest.pulls.update({
-              ...context.repo,
-              pull_number: context.payload.pull_request.number,
-              body: (context.payload.pull_request.body || '') + `\n\n${comment}`,
+              ...github.context.repo,
+              pull_number: github.context.payload.pull_request.number,
+              body: (github.context.payload.pull_request.body || '') + `\n\n${comment}`,
             });
           } else {
-            // Agregar un mensaje de estado para commits directos
+            // Add a commit status message for direct commits
             await github.rest.repos.createCommitStatus({
-              ...context.repo,
-              sha: context.sha,
+              ...github.context.repo,
+              sha: github.context.sha,
               state: testOutcome.includes('✔') ? 'success' : 'failure',
               description: testOutcome,
               context: 'Resultados de las pruebas',
