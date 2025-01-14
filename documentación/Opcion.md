@@ -28,19 +28,29 @@ namespace opc {
 ### Implementación Principal
 ```cpp
 namespace opc {
-    template<typename T>
-    struct Opcion : public OpcionBase<T> {
-    private:
+    template <typename T> 
+    struct Opcion : public OpcionBase<T>{
+        private:
         T data;
-        using OpcionBase<T>::vacia;
-        
-    public:
-        Opcion() noexcept;
+        using OpcionBase<T>::vacia;  
+        public:
+        explicit Opcion() noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T> = delete;
+        explicit Opcion() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
         explicit Opcion(T data) noexcept;
+
+        T valorO(T porDefecto) const noexcept;
         
-        std::tuple<T, bool> Consumir() noexcept;
-        operator bool() noexcept;
-        std::tuple<T, bool> operator()() noexcept;
+        std::tuple<T, bool> Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)  
+            requires utiles::genericos::con_constructor_por_defecto<T>;
+        std::tuple<T, bool> Consumir(T porDefecto) noexcept  
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
+
+        std::tuple<T, bool> operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
+        std::tuple<T, bool> operator()(T porDefecto) noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
     };
 }
 ```
@@ -99,7 +109,8 @@ namespace opc {
 
 ### Métodos
 - `bool estaVacia() const noexcept`: Indica si la opción está vacía
-- `std::tuple<T, bool> Consumir() noexcept`: Devuelve una tupla con el valor (si existe) y un indicador de éxito
+- `std::tuple<T, bool> Consumir() noexcept`: Devuelve una tupla con el valor (o en su defecto `T{}` / `nullptr`) y un indicador de si la Opción está vacía.  *Para valores directos que proveen constructor por defecto, o para punteros*.
+- `std::tuple<T, bool> Consumir(T porDefecto) noexcept`: Devuelve una tupla con el valor (si existe, sino valor por defect) y un indicador de éxito. *Para valores directos que no proveen constructor por defecto*.
 - `operator bool()`: Devuelve verdadero si la opción contiene un valor
 - `operator()()`: Alias para Consumir()
 

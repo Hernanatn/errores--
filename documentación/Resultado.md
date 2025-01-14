@@ -30,16 +30,26 @@ namespace res {
         using ResultadoBase<T>::error;
         
     public:
-        Resultado() noexcept;
+        explicit Resultado() noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T> = delete;
+        explicit Resultado() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
         explicit Resultado(T data) noexcept;
         explicit Resultado(T data, err::Error error) noexcept;
         explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
-        
-        std::tuple<T, err::Error> Consumir() noexcept;
         ~Resultado() noexcept;
         
         operator bool() noexcept;
-        std::tuple<T, err::Error> operator()() noexcept;
+
+        std::tuple<T, err::Error>Consumir(T porDefecto) noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
+        std::tuple<T, err::Error>Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>; 
+
+        std::tuple<T, err::Error> operator()(T porDefecto) noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
+        std::tuple<T, err::Error> operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
     };
 }
 ```
@@ -108,7 +118,8 @@ namespace res {
 
 ### Métodos
 - `err::Error Error() const noexcept`: Devuelve el estado del error
-- `std::tuple<T, err::Error> Consumir() noexcept`: Devuelve una tupla con el valor y el error
+- `std::tuple<T, err::Error> Consumir() noexcept`: Devuelve una tupla con el valor (o en su defecto `T{}` / `nullptr`) y el error. *Para valores directos que proveen constructor por defecto. O punteros*.
+- `std::tuple<T, err::Error> Consumir(T porDefecto) noexcept`: Devuelve una tupla con el valor (si existe, de lo contrario `porDefecto`) y el error *Para valores directos que no proveen constructor por defecto*.
 - `operator bool()`: Devuelve verdadero si la operación fue exitosa
 - `operator()()`: Alias para Consumir()
 

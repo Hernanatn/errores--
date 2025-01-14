@@ -4,15 +4,15 @@
 
 `Errores--` está inspirada en el manejo de errores como valores de `Go` y en los contenedores `Option<T>` y `Result<T>` de `Rust`. La librería adscribe al paradigma ***Cero es Inicialización - ZII** (Zero Is Initialization)* y se enfoca en imponer prácticas seguras con una semántica clara de propiedad de memoria.
 
-[![Hecho por Chaska](https://img.shields.io/badge/hecho_por-Ch'aska-303030.svg)](https://cajadeideas.ar)
-[![Versión: Alpha v0.2.0](https://img.shields.io/badge/version-Alpha_v0.2.0-orange.svg)](https://github.com/hernanatn/github.com/hernanatn/aplicacion.go/releases/latest)
-[![Verisón de C++: 20](https://img.shields.io/badge/C++-20-blue?logo=cplusplus)](https://es.cppreference.com/w/cpp/20)
+<img src="https://img.shields.io/badge/hecho_por-Ch'aska-253545?style=for-the-badge" alt="hecho_por_Chaska" height="25px"/> <img src="https://img.shields.io/badge/C%2B%2B_20-4549BF?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" height="25px"/> <a href=https://github.com/hernanatn/github.com/hernanatn/errores--/releases/latest><img src="https://img.shields.io/badge/Versión-0.0.1--alpha-orange?style=for-the-badge" alt="version" height="25px"/></a> <img src="https://img.shields.io/badge/Licencia-CC_BY--NC--ND_4.0-lightgrey?style=for-the-badge" alt="licencia" height="25px"/>
+
+
 ![Empaquetado](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/empaquetar.yml?label=bundle)
-[![Licencia: CC BY-NC 4.0](https://img.shields.io/badge/Licencia-CC_BY--SA_4.0-lightgrey.svg)](LICENSE)
+![Pruebas](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/pruebas.yml?label=tests)
 
 1. [Introducción](#errores--)
     - [Uso](#uso)
-2. [Novedades en v0.2.0-alpha](#novedades-en-v020-alpha)
+2. [Novedades en v0.5.0-beta](#novedades-en-v020-beta)
 3. [Manejo de Memoria](#manejo-de-memoria)
    - [Tipos de Datos Soportados](#tipos-de-datos-soportados)
    - [Restricciones de Memoria](#restricciones-de-memoria)
@@ -38,15 +38,14 @@ La librería se puede incluir en un proyecto descargando e `#incluyendo` el arch
 #include "errores--.hpp"
 ```
 
-## Novedades en v0.2.0-alpha
+## Novedades en v0.5.0-beta
 
-Esta versión introduce mejoras significativas en el manejo de memoria y la seguridad de tipos:
+Esta versión introduce manejo diferenciado para atender casos en que el tipo subyacente no provee constructor por defecto:
 
-- Implementación de especializaciones de plantillas para `Opcion<T>` y `Resultado<T>` que manejan de forma segura valores directos, punteros desnudos y punteros inteligentes.
-- Utilización de conceptos de C++20 para restricciones de tipos más expresivas y seguras.
-- Suite de pruebas completa implementada con Catch2.
-- Semántica de movimiento mejorada para tipos que no admiten copia.
-- Documentación expandida con ejemplos de uso.
+- Implementación de especializaciones de plantillas para `Opcion<T>` y `Resultado<T>` que que manejan casos en que `T` no provee constructor por defecto;
+- Tanto ``Opcion<T>`` como ``Resultado<T>`` ahora inicializan a `nullptr` cuando `T` es un puntero desnudo; 
+- Agrega método útil `valorO(T porDefecto)` en la especialización de `Opcion<T>` para valores "simples"; y
+- Más pruebas.
 
 ## Manejo de Memoria
 
@@ -91,7 +90,7 @@ La clase `Error` encapsula información sobre errores mediante un código de est
 - `operator char*()`: Convierte el mensaje a cadena estilo C modificable
 - `operator<<`: Permite imprimir el error en flujos de salida
 
-#### Funciones Utilitarias
+#### Funciones Útiles
 ```cpp
 namespace err {
     inline Error Exito(std::string mensaje = "Exito");
@@ -106,25 +105,27 @@ namespace err {
 
 #### Métodos
 - `bool estaVacia() const noexcept`: Indica si la opción está vacía
-- `std::tuple<T, bool> Consumir() noexcept`: Devuelve una tupla con el valor (si existe) y un indicador de éxito
+- `std::tuple<T, bool> Consumir() noexcept`: Devuelve una tupla con el valor (o en su defecto `T{}` / `nullptr`) y un indicador de si la Opción está vacía.  *Para valores directos que proveen constructor por defecto, o para punteros*.
+- `std::tuple<T, bool> Consumir(T porDefecto) noexcept`: Devuelve una tupla con el valor (si existe, sino valor por defect) y un indicador de éxito. *Para valores directos que no proveen constructor por defecto*
 - `operator bool()`: Devuelve verdadero si la opción contiene un valor
 - `operator()()`: Alias para Consumir()
 
 #### Especializaciones
 1. **Valores Directos**
-   - Maneja tipos por valor (int, std::string, etc.)
-   - Inicialización a cero cuando está vacío
+   - Retorna valor inicializado a cero si está vacía y si el tipo ofrece constructor por defecto, o acepta un argumento `T porDefecto` en caso contrario
+   - Constructor por defecto eliminado para tipos que no lo proveen.
 
 2. **Punteros Desnudos** (T*)
+   - nullptr cuando está vacía
    - Asume propiedad exclusiva de la memoria apuntada
    - Libera la memoria automáticamente si no es consumida
    - Constructor y operador de copia eliminados
    - Semántica de movimiento mediante std::exchange
 
 3. **Punteros Inteligentes** (std::unique_ptr<T>, std::shared_ptr<T>)
-   - Semántica de movimiento para transferencia de propiedad
-   - nullptr cuando está vacío
+   - nullptr cuando está vacía
    - Constructor y operador de copia eliminados
+   - Semántica de movimiento para transferencia de propiedad
 
 
 ### Resultado<T>
@@ -133,24 +134,27 @@ namespace err {
 
 #### Métodos
 - `err::Error Error() const noexcept`: Devuelve el estado del error
-- `std::tuple<T, err::Error> Consumir() noexcept`: Devuelve una tupla con el valor y el error
+- `std::tuple<T, err::Error> Consumir() noexcept`: Devuelve una tupla con el valor (o en su defecto `T{}` / `nullptr`) y el error. *Para valores directos que proveen constructor por defecto. O punteros*.
+- `std::tuple<T, err::Error> Consumir(T porDefecto) noexcept`: Devuelve una tupla con el valor (si existe, de lo contrario `porDefecto`) y el error *Para valores directos que no proveen constructor por defecto*.
 - `operator bool()`: Devuelve verdadero si la operación fue exitosa
 - `operator()()`: Alias para Consumir()
 
 #### Especializaciones
 1. **Valores Directos**
-   - Retorna valor inicializado a cero en caso de error
-   - Copia el valor en caso de éxito
+   - Retorna valor inicializado a cero en caso de error si el tipo ofrece constructor por defecto, o acepta un argumento `T porDefecto` en caso contrario
+   - Constructor por defecto eliminado para tipos que no lo proveen.
 
 2. **Punteros Desnudos** (T*)
+   - nullptr en caso de error
    - Asume propiedad exclusiva de la memoria apuntada
-   - Retorna nullptr en caso de error
    - Libera memoria si no es consumida
+   - Constructor y operador de copia eliminados
    - Semántica de movimiento mediante std::exchange
 
 3. **Punteros Inteligentes** (std::unique_ptr<T>, std::shared_ptr<T>)
+   - nullptr en caso de error
+   - Constructor y operador de copia eliminados
    - Semántica de movimiento para transferencia de propiedad
-   - Retorna nullptr en caso de error
 
 ## Documentación
 La referencia para las abstracciones, una explicación más acabada del manejo de memoria con `errores--` y más ejemplos pueden encontrarse en [/documentación](/documentación)
@@ -168,7 +172,7 @@ Se puede correr el archivo provisto ( [/pruebas/correr_pruebas.exe](/pruebas/pru
 
 ## Estado del Proyecto
 
-Esta versión (v0.2.0-alpha) representa un avance significativo en términos de seguridad y funcionalidad, pero aún se considera en estado alpha. La API puede sufrir cambios en futuras versiones.
+Esta versión (v0.5.0-beta) representa un avance significativo en términos de seguridad y funcionalidad, pero aún se considera en estado beta. La API puede sufrir cambios (menores) en futuras versiones.
 
 
 ## Ejemplos
@@ -186,6 +190,14 @@ res::Resultado<float> dividir(float a, float b) {
 }
 
 // Función que puede retornar un valor opcional
+opc::Opcion<std::string> obtenerEntorno(const std::string& clave) {
+    if (configuraciones.count(clave) == 0 || !ENTORNO) {
+        return opc::Opcion<std::string>();  // Retorna opción vacía
+    }
+    return opc::Opcion<std::string>(configuraciones[clave]);
+}
+
+// otra Función que puede retornar un valor opcional
 opc::Opcion<int> obtenerConfiguracion(const std::string& clave) {
     if (configuraciones.count(clave) == 0) {
         return opc::Opcion<int>();  // Retorna opción vacía
@@ -209,6 +221,9 @@ void ejemplo() {
         // Manejar ausencia de valor
         valor = 10;  // Valor por defecto
     }
+
+    auto opcionEntorno = obtenerEntorno("PRODUCCION");
+    std::string entorno = opcionEntorno.valorO("DESARROLLO");
     
     // Continuar con la lógica normal
     std::cout << "Resultado: " << resultado << ", Configuración: " << valor << std::endl;
@@ -222,8 +237,12 @@ void ejemplo() {
 opc::Opcion<int> optInt(42);
 auto [valor, ok] = optInt();
 if (ok) {
-    std::cout << "Valor: " << valor << "\n";
+    std::cout << "Valor: " << valor << "\n"; // Valor: 42
 }
+
+opc::Opcion<int> optInt();
+int x = optInt.valorO(5)
+std::cout << "X: " << x << "\n"; // X: 5
 ```
 
 ### Manejo de Punteros Inteligentes
@@ -257,4 +276,4 @@ if (error) {
 ```
 
 ## Licencia
-Este proyecto está licenciado bajo CC BY-SA 4.0. Ver el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo CC BY-SA 4.0. Ver el archivo [LICENSE](LICENSE) para más detalles.

@@ -54,17 +54,27 @@ namespace res { //Declaración
             using ResultadoBase<T>::error;
 
         public:
-            Resultado() noexcept : resultado(T{}), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+            explicit Resultado() noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T> = delete;
+            explicit Resultado() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
 
             explicit Resultado(T data) noexcept;
             explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
             explicit Resultado(T data, err::Error error) noexcept;
-
-            std::tuple<T, err::Error>Consumir() noexcept;
+            
             ~Resultado() noexcept;
 
+            std::tuple<T, err::Error>Consumir(T porDefecto) noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T>;
+            std::tuple<T, err::Error>Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
+
             operator bool() noexcept;
-            std::tuple<T, err::Error> operator()() noexcept;
+            std::tuple<T, err::Error> operator()(T porDefecto) noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T>;
+            std::tuple<T, err::Error> operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
     };
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
@@ -74,7 +84,7 @@ namespace res { //Declaración
             using ResultadoBase<T>::error;
 
         public:
-            Resultado() noexcept : resultado(nullptr), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+            Resultado() noexcept;
 
             explicit Resultado(T data) noexcept;
             
@@ -123,6 +133,13 @@ namespace res { //Declaración
 }
 
 namespace res { // Implementación
+    template <typename T>
+    Resultado<T>::Resultado() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+    requires utiles::genericos::con_constructor_por_defecto<T> {
+        this->resultado = T{};
+        this->error = err::Exito();
+    }
+    
     template<typename T>
     Resultado<T>::Resultado(T data) noexcept{
         this->resultado = data;        
@@ -150,18 +167,40 @@ namespace res { // Implementación
     }
 
     template<typename T>
-    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
+    std::tuple<T, err::Error> Resultado<T>::Consumir(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+        bool ok = !this->Error();
+        return std::make_tuple(ok ? this->resultado : porDefecto, error);
+    };
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
         bool ok = !this->Error();
         return std::make_tuple(ok ? this->resultado : T{}, error);
     }
+
     template<typename T>
-    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
-        return Consumir();
-    }
+    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
+            return Consumir();
+        }
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::operator()(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+            return Consumir(porDefecto);
+        }
 
     /*
      *  Especialización para Punteros Desnudos
      */
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado() noexcept{
+        this->resultado = nullptr;
+        this->error = err::Exito();
+    }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
