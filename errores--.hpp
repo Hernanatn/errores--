@@ -103,7 +103,6 @@ namespace err { // Declaración
 }
 
 namespace err { //Implementación
-
     inline Error::Error(CodigoEstado codigo, std::string mensaje){
         this->codigo = codigo;
         this->mensaje = "[" + std::to_string(codigo) + "] " + mensaje + "\n";
