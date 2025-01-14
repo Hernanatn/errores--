@@ -23,11 +23,11 @@ jobs:
 
     - name: Instalar Ninja
       run: |
-        choco upgrade ninja
+        choco install ninja
     
     - name: Configurar Clang y CMake
       run: |
-        choco upgrade llvm
+        choco install llvm
         echo "CMake version: $(cmake --version)"
         echo "Clang version: $(clang --version)"
         cmake -S . -B build -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++  -DCMAKE_CXX_STANDARD=20 -G "Ninja"
@@ -51,7 +51,6 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const core = require('@actions/core');
           const github = require('@actions/github');
           
           // Determine the outcome of the 'Ejecutar Pruebas' step

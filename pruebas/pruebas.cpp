@@ -277,7 +277,6 @@ int main(int argc, char* argv[]) {
     if (codigo == 0) {
         codigo = session.run();
     }
-
     // Devolver 1 si alguna prueba falló.
     return (codigo == 0) ? 0 : 1;
 }
