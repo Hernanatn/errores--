@@ -36,11 +36,13 @@ jobs:
         set CC=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang
         echo "CXX and CC are set to Clang 19.1.4"
         
-        set CLANG_BIN=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin
-        set PATH=%CLANG_BIN%;%PATH%
+        # Set environment variables for Clang 19.1.4
+        $env:CLANG_BIN = "$PWD\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin"
+        $env:PATH = "$env:CLANG_BIN;$env:PATH"
         echo "Clang binaries are added to the PATH"
 
-        cmake -S . -B build -DCMAKE_C_COMPILER=%CLANG_BIN%\clang -DCMAKE_CXX_COMPILER=%CLANG_BIN%\clang++ -DCMAKE_CXX_STANDARD=20 -G "Ninja"
+        # Configure the project with CMake using Clang and C++20
+        cmake -S . -B build -DCMAKE_C_COMPILER="$env:CLANG_BIN\clang" -DCMAKE_CXX_COMPILER="$env:CLANG_BIN\clang++" -DCMAKE_CXX_STANDARD=20 -G "Ninja"
 
     - name: Compilar
       run: |
