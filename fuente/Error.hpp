@@ -98,5 +98,4 @@ namespace err { //Implementación
     }
 }
 
-
 #endif
