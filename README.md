@@ -10,9 +10,14 @@
 ![Empaquetado](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/empaquetar.yml?label=bundle)
 ![Pruebas](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/pruebas.yml?label=tests)
 
+<details>
+
+<summary><h3>Índice </h3></summary>    
+
+
 1. [Introducción](#errores--)
     - [Uso](#uso)
-2. [Novedades en v0.5.0-beta](#novedades-en-v020-beta)
+2. [Novedades en v0.5.0-beta](#novedades-en-v050-beta)
 3. [Manejo de Memoria](#manejo-de-memoria)
    - [Tipos de Datos Soportados](#tipos-de-datos-soportados)
    - [Restricciones de Memoria](#restricciones-de-memoria)
@@ -31,6 +36,9 @@
    - [Manejo de Errores](#manejo-de-errores)
 10. [Licencia](#licencia)
 
+
+</details>
+
 ### Uso
 La librería se puede incluir en un proyecto descargando e `#incluyendo` el archivo de encabezado [`errores--.hpp`](/errores--.hpp)
 
@@ -38,6 +46,9 @@ La librería se puede incluir en un proyecto descargando e `#incluyendo` el arch
 #include "errores--.hpp"
 ```
 
+<details>
+<summary><h2>Novedades en v0.5.0-beta</h2></summary>
+    
 ## Novedades en v0.5.0-beta
 
 Esta versión introduce manejo diferenciado para atender casos en que el tipo subyacente no provee constructor por defecto:
@@ -46,6 +57,8 @@ Esta versión introduce manejo diferenciado para atender casos en que el tipo su
 - Tanto ``Opcion<T>`` como ``Resultado<T>`` ahora inicializan a `nullptr` cuando `T` es un puntero desnudo; 
 - Agrega método útil `valorO(T porDefecto)` en la especialización de `Opcion<T>` para valores "simples"; y
 - Más pruebas.
+
+</details>
 
 ## Manejo de Memoria
 
@@ -174,6 +187,9 @@ Se puede correr el archivo provisto ( [/pruebas/correr_pruebas.exe](/pruebas/pru
 
 Esta versión (v0.5.0-beta) representa un avance significativo en términos de seguridad y funcionalidad, pero aún se considera en estado beta. La API puede sufrir cambios (menores) en futuras versiones.
 
+<details>
+<summary><h2>Ejemplos</h2></summaryy>
+    
 
 ## Ejemplos
 ### Ejemplo de Uso Idiomático
@@ -274,6 +290,8 @@ if (error) {
 }
 //continuar
 ```
+
+</details>
 
 ## Licencia
 Este proyecto está licenciado bajo CC BY-SA 4.0. Ver el archivo [LICENSE](LICENSE) para más detalles.
