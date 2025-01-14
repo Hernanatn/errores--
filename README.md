@@ -4,7 +4,7 @@
 
 `Errores--` está inspirada en el manejo de errores como valores de `Go` y en los contenedores `Option<T>` y `Result<T>` de `Rust`. La librería adscribe al paradigma ***Cero es Inicialización - ZII** (Zero Is Initialization)* y se enfoca en imponer prácticas seguras con una semántica clara de propiedad de memoria.
 
-<img src="https://img.shields.io/badge/hecho_por-Ch'aska-253545?style=for-the-badge" alt="hecho_por_Chaska" height="25px"/> <img src="https://img.shields.io/badge/C%2B%2B_20-4549BF?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" height="25px"/> <a href=https://github.com/hernanatn/github.com/hernanatn/errores--/releases/latest><img src="https://img.shields.io/badge/Versión-0.0.1--alpha-orange?style=for-the-badge" alt="version" height="25px"/></a> <img src="https://img.shields.io/badge/Licencia-CC_BY--NC--ND_4.0-lightgrey?style=for-the-badge" alt="licencia" height="25px"/>
+<img src="https://img.shields.io/badge/hecho_por-Ch'aska-253545?style=for-the-badge" alt="hecho_por_Chaska" height="25px"/> <img src="https://img.shields.io/badge/C%2B%2B_20-4549BF?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" height="25px"/> <a href=https://github.com/hernanatn/github.com/hernanatn/errores--/releases/latest><img src="https://img.shields.io/badge/Versión-0.5.0--beta-orange?style=for-the-badge" alt="version" height="25px"/></a> <img src="https://img.shields.io/badge/Licencia-CC_BY--NC--ND_4.0-lightgrey?style=for-the-badge" alt="licencia" height="25px"/>
 
 
 ![Empaquetado](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/empaquetar.yml?label=bundle)
