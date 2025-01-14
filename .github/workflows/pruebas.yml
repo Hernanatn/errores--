@@ -22,8 +22,8 @@ jobs:
         submodules: 'true'
     - name: Compilar
       run: |
-        cmake -S . -B compilar
-        cmake --build compilar
+        cmake -S . -B build
+        cmake --build build
     - name: EjecutarPruebas
       id: test
       run: |
