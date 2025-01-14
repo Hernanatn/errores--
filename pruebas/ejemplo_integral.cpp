@@ -59,7 +59,6 @@ void servidorEco(int puerto) {
         std::cout << "Error al inicializar el servidor: " << errorServidor << std::endl;
         return;
     }
-
     std::cout << "Servidor iniciado en el puerto " << puerto << " (Socket ID: " << *servidorSocket << ")" << std::endl;
 
     while (true) {

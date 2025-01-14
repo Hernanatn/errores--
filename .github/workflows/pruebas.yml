@@ -51,9 +51,8 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          // Obtener el estado del paso 'Ejecutar Pruebas'
-          const testStep = jobs['construir-y-probar'].steps.find(step => step.id === 'ejecutar_pruebas');
-          const testOutcome = testStep?.conclusion === 'success' ?
+          const testStep = '${{ steps.ejecutar_pruebas.outcome }}';
+          const testOutcome = testStep === 'success' ?
                               '✔ Todas las pruebas pasaron correctamente.' :
                               '❌ Las pruebas fallaron.';
           const comment = `Resultado de las pruebas:\n\n${testOutcome}`;
