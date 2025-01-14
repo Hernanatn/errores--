@@ -26,7 +26,7 @@ jobs:
         mkdir clang-19.1.4
         cd clang-19.1.4
         curl -LO https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.4/clang+llvm-19.1.4-x86_64-windows-msvc.zip
-          
+        
         powershell -Command "Expand-Archive -Path clang+llvm-19.1.4-x86_64-windows-msvc.zip -DestinationPath ."
         echo "LLVM and Clang installed to $(pwd)"
 
@@ -35,8 +35,12 @@ jobs:
         set CXX=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang++
         set CC=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang
         echo "CXX and CC are set to Clang 19.1.4"
+        
+        set CLANG_BIN=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin
+        set PATH=%CLANG_BIN%;%PATH%
+        echo "Clang binaries are added to the PATH"
 
-        cmake -S . -B build -DCMAKE_C_COMPILER=%CC% -DCMAKE_CXX_COMPILER=%CXX% -DCMAKE_CXX_STANDARD=20
+        cmake -S . -B build -DCMAKE_C_COMPILER=%CLANG_BIN%\clang -DCMAKE_CXX_COMPILER=%CLANG_BIN%\clang++ -DCMAKE_CXX_STANDARD=20 -G "Ninja"
 
     - name: Compilar
       run: |
