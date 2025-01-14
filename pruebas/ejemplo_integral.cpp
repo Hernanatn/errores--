@@ -87,7 +87,6 @@ void servidorEco(int puerto) {
                 break;
             }
         }
-
         cerrarSocket(std::move(clienteSocket));
     }
     cerrarSocket(std::move(servidorSocket));

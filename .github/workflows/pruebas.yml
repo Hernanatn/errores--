@@ -23,21 +23,19 @@ jobs:
 
     - name: Instalar Clang 19.1.4
       run: |
-        # Download and install LLVM/Clang 19.1.4 from the official LLVM website
         mkdir clang-19.1.4
         cd clang-19.1.4
-        curl -LO https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.4/clang+llvm-19.1.4-x86_64-windows-msvc.tar.xz
-        tar -xf clang+llvm-19.1.4-x86_64-windows-msvc.tar.xz
+        curl -LO https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.4/clang+llvm-19.1.4-x86_64-windows-msvc.zip
+          
+        powershell -Command "Expand-Archive -Path clang+llvm-19.1.4-x86_64-windows-msvc.zip -DestinationPath ."
         echo "LLVM and Clang installed to $(pwd)"
 
     - name: Configurar CMake con Clang 19.1.4 y C++20
       run: |
-        # Set environment variables for Clang 19.1.4
         set CXX=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang++
         set CC=%CD%\clang-19.1.4\clang+llvm-19.1.4-x86_64-windows-msvc\bin\clang
         echo "CXX and CC are set to Clang 19.1.4"
 
-        # Configure the project with CMake using Clang and C++20
         cmake -S . -B build -DCMAKE_C_COMPILER=%CC% -DCMAKE_CXX_COMPILER=%CXX% -DCMAKE_CXX_STANDARD=20
 
     - name: Compilar
