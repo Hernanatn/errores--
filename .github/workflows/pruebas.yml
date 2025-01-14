@@ -48,29 +48,29 @@ jobs:
         type build\Testing\Temporary\LastTest.log
 
     - name: Actualizar Descripción de PR o Commit
-        uses: actions/github-script@v6
-        with:
-          script: |
-            // Determinar el resultado de las pruebas
-            const testOutcome = (steps.ejecutar_pruebas.outcome === 'success') ? 
-                                '✔ Todas las pruebas pasaron correctamente.' : 
-                                '❌ Las pruebas fallaron.';
-            const comment = `Resultado de las pruebas:\n\n${testOutcome}`;
-            
-            // Actualizar la descripción del pull request si es un PR
-            if (context.payload.pull_request) {
-              await github.rest.pulls.update({
-                ...context.repo,
-                pull_number: context.payload.pull_request.number,
-                body: (context.payload.pull_request.body || '') + `\n\n${comment}`,
-              });
-            } else {
-              // Agregar un mensaje de estado para commits directos
-              await github.rest.repos.createCommitStatus({
-                ...context.repo,
-                sha: context.sha,
-                state: testOutcome.includes('✔') ? 'success' : 'failure',
-                description: testOutcome,
-                context: 'Resultados de las pruebas',
-              });
-            }
+      uses: actions/github-script@v6
+      with:
+        script: |
+          // Determinar el resultado de las pruebas
+          const testOutcome = (steps.ejecutar_pruebas.outcome === 'success') ? 
+                              '✔ Todas las pruebas pasaron correctamente.' : 
+                              '❌ Las pruebas fallaron.';
+          const comment = `Resultado de las pruebas:\n\n${testOutcome}`;
+          
+          // Actualizar la descripción del pull request si es un PR
+          if (context.payload.pull_request) {
+            await github.rest.pulls.update({
+              ...context.repo,
+              pull_number: context.payload.pull_request.number,
+              body: (context.payload.pull_request.body || '') + `\n\n${comment}`,
+            });
+          } else {
+            // Agregar un mensaje de estado para commits directos
+            await github.rest.repos.createCommitStatus({
+              ...context.repo,
+              sha: context.sha,
+              state: testOutcome.includes('✔') ? 'success' : 'failure',
+              description: testOutcome,
+              context: 'Resultados de las pruebas',
+            });
+          }
