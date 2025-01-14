@@ -96,5 +96,4 @@ namespace err { //Implementación
         );
     }
 }
-
 #endif
