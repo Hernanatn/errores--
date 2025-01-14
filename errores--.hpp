@@ -3,54 +3,46 @@
 
 #ifndef GENERICOS_H
 #define GENERICOS_H
-#include <type_traits>
 #include <memory>
-
+#include <type_traits>
 
 namespace utiles {
-    namespace genericos {
-    template <typename T, typename = void>
-    struct tiene_et : std::false_type {};
+namespace genericos {
+template <typename T, typename = void> struct tiene_et : std::false_type {};
+template <typename T> struct tiene_et<T, std::void_t<typename T::element_type>> : std::true_type {};
+template <typename T, typename = void> struct tiene_vt : std::false_type {};
+template <typename T> struct tiene_vt<T, std::void_t<typename T::value_type>> : std::true_type {};
 
-    template <typename T>
-    struct tiene_et<T, std::void_t<typename T::element_type>> : std::true_type {};
 
-    template <typename T, typename = void>
-    struct tiene_vt : std::false_type {};
 
-    template <typename T>
-    struct tiene_vt<T, std::void_t<typename T::value_type>> : std::true_type {};
+template <typename T>
+concept es_copiable = std::is_copy_constructible_v<T> && std::is_copy_assignable_v<T>;
 
-    template<typename T>
-    struct es_solo_movible {
-    private:
-        static constexpr bool es_movible = 
-            std::is_move_constructible_v<T> && 
-            std::is_move_assignable_v<T>;
-        
-        static constexpr bool es_copiable = 
-            std::is_copy_constructible_v<T> && 
-            std::is_copy_assignable_v<T>;
-        
-    public:
-        static constexpr bool value = es_movible && !es_copiable;
-    };
+template <typename T>
+concept es_movible = std::is_move_constructible_v<T> && std::is_move_assignable_v<T>;
 
-    template<typename T>
-    concept puntero_inteligente = 
-        std::is_same_v<T, std::shared_ptr<typename T::element_type>> ||
-        std::is_same_v<T, std::unique_ptr<typename T::element_type>>;
+template <typename T>
+concept es_solo_movible = es_movible<T> && !es_copiable<T>;
 
-    template<typename  T>
-    concept puntero_desnudo = std::is_pointer<T>::value;
+template <typename T>
+concept puntero_inteligente =
+    std::is_same_v<T, std::shared_ptr<typename T::element_type>> ||
+    std::is_same_v<T, std::unique_ptr<typename T::element_type>>;
 
-    template<typename  T>
-    concept puntero =
-        puntero_desnudo<T> ||
-        puntero_inteligente<T>;
+template <typename T>
+concept puntero_desnudo = std::is_pointer<T>::value;
 
-    }
-}
+template <typename T>
+concept puntero = puntero_desnudo<T> || puntero_inteligente<T>;
+
+template <typename T>
+concept sin_constructor_por_defecto = !std::is_default_constructible_v<T>;
+
+template <typename T>
+concept con_constructor_por_defecto = std::is_default_constructible_v<T>;
+
+} // namespace genericos
+} // namespace utiles
 
 #endif
 #ifndef ERROR_HPP
@@ -172,8 +164,8 @@ namespace opc { // Declaración
     public:
         OpcionBase() noexcept : vacia(true) {}
         virtual ~OpcionBase() noexcept = default;
-        bool estaVacia() const noexcept { return vacia; }
-        operator bool() noexcept { return !vacia; }
+        bool estaVacia() const noexcept { return vacia; };
+        operator bool() noexcept { return !vacia; };
     };
 
     /**
@@ -218,9 +210,15 @@ namespace opc { // Declaración
         using OpcionBase<T>::vacia;  
 
         public:
-        Opcion() noexcept;
+        
+        explicit Opcion() noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T> = delete;
+
+        explicit Opcion() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
         explicit Opcion(T data) noexcept;
 
+        T valorO(T porDefecto) const noexcept;
         /**
         * @brief Consumir "eleva" el valor de la opción y la "consume" - transfiere la propiedad de la data subyacente si es un puntero.
         *
@@ -240,7 +238,11 @@ namespace opc { // Declaración
         * defecto) y un indicador de si la opción contenía un valor válido (`true` o
         * `false`).
         */
-        std::tuple<T, bool> Consumir() noexcept;
+        std::tuple<T, bool> Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)  
+            requires utiles::genericos::con_constructor_por_defecto<T>;
+        
+        std::tuple<T, bool> Consumir(T porDefecto) noexcept  
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
 
         operator bool() noexcept;
 
@@ -250,9 +252,12 @@ namespace opc { // Declaración
         * defecto) y un indicador de si la opción contenía un valor válido (`true` o
         * `false`).
         */
-        std::tuple<T, bool> operator()() noexcept;
-    };
+        std::tuple<T, bool> operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+            requires utiles::genericos::con_constructor_por_defecto<T>;
 
+        std::tuple<T, bool> operator()(T porDefecto) noexcept
+            requires utiles::genericos::sin_constructor_por_defecto<T>;
+    };
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     struct Opcion<T> : public OpcionBase<T> {
@@ -272,6 +277,7 @@ namespace opc { // Declaración
 
         ~Opcion() noexcept;
         operator bool() noexcept;
+        T valorO(T porDefecto) const noexcept;
         std::tuple<T, bool> Consumir() noexcept;
         std::tuple<T, bool> operator()() noexcept;
     };
@@ -302,8 +308,9 @@ namespace opc { // Declaración
 
 namespace opc{ // Implementación
     template <typename T>
-    Opcion<T>::Opcion() noexcept{
-        this->data = T{};
+    Opcion<T>::Opcion() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
+        this->data = T{};  
         this->vacia = true;
     }
 
@@ -314,16 +321,36 @@ namespace opc{ // Implementación
     }
 
     template<typename T>
-    std::tuple<T, bool> Opcion<T>::Consumir() noexcept{
+    std::tuple<T, bool> Opcion<T>::Consumir(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+        bool ok = !this->estaVacia();
+        return std::make_tuple(ok ? this->data : porDefecto, ok);
+    };
+
+    template<typename T>
+    std::tuple<T, bool> Opcion<T>::Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
         bool ok = !this->estaVacia();
         return std::make_tuple(ok ? this->data : T{}, ok);
     }
 
     template<typename T>
-    std::tuple<T, bool> Opcion<T>::operator()() noexcept{
+    std::tuple<T, bool> Opcion<T>::operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
             return Consumir();
         }
 
+    template<typename T>
+    std::tuple<T, bool> Opcion<T>::operator()(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+            return Consumir(porDefecto);
+        }
+
+
+    template<typename T>
+    T Opcion<T>::valorO(T porDefecto) const noexcept{
+        return this->estaVacia() ? porDefecto : data;
+    };
 
 
     /*
@@ -332,7 +359,7 @@ namespace opc{ // Implementación
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Opcion<T>::Opcion() noexcept{
-        this->data = T{};
+        this->data = nullptr;
         this->vacia = true;
     }
 
@@ -377,6 +404,12 @@ namespace opc{ // Implementación
         return Consumir();
     }
 
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    T Opcion<T>::valorO(T porDefecto) const noexcept{
+        bool ok = !this->estaVacia();
+        this->vacia = true;
+        return ok ? std::exchange(this->data,nullptr) : porDefecto;
+    };
     /*
      *  Especialización para Punteros Inteligentes
      */
@@ -485,17 +518,27 @@ namespace res { //Declaración
             using ResultadoBase<T>::error;
 
         public:
-            Resultado() noexcept : resultado(T{}), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+            explicit Resultado() noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T> = delete;
+            explicit Resultado() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
 
             explicit Resultado(T data) noexcept;
             explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
             explicit Resultado(T data, err::Error error) noexcept;
-
-            std::tuple<T, err::Error>Consumir() noexcept;
+            
             ~Resultado() noexcept;
 
+            std::tuple<T, err::Error>Consumir(T porDefecto) noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T>;
+            std::tuple<T, err::Error>Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
+
             operator bool() noexcept;
-            std::tuple<T, err::Error> operator()() noexcept;
+            std::tuple<T, err::Error> operator()(T porDefecto) noexcept
+                requires utiles::genericos::sin_constructor_por_defecto<T>;
+            std::tuple<T, err::Error> operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+                requires utiles::genericos::con_constructor_por_defecto<T>;
     };
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
@@ -505,7 +548,7 @@ namespace res { //Declaración
             using ResultadoBase<T>::error;
 
         public:
-            Resultado() noexcept : resultado(nullptr), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+            Resultado() noexcept;
 
             explicit Resultado(T data) noexcept;
             
@@ -554,6 +597,13 @@ namespace res { //Declaración
 }
 
 namespace res { // Implementación
+    template <typename T>
+    Resultado<T>::Resultado() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+    requires utiles::genericos::con_constructor_por_defecto<T> {
+        this->resultado = T{};
+        this->error = err::Exito();
+    }
+    
     template<typename T>
     Resultado<T>::Resultado(T data) noexcept{
         this->resultado = data;        
@@ -581,18 +631,40 @@ namespace res { // Implementación
     }
 
     template<typename T>
-    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept{
+    std::tuple<T, err::Error> Resultado<T>::Consumir(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+        bool ok = !this->Error();
+        return std::make_tuple(ok ? this->resultado : porDefecto, error);
+    };
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::Consumir() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
         bool ok = !this->Error();
         return std::make_tuple(ok ? this->resultado : T{}, error);
     }
+
     template<typename T>
-    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept{
-        return Consumir();
-    }
+    std::tuple<T, err::Error> Resultado<T>::operator()() noexcept(utiles::genericos::con_constructor_por_defecto<T>)
+        requires utiles::genericos::con_constructor_por_defecto<T> {
+            return Consumir();
+        }
+
+    template<typename T>
+    std::tuple<T, err::Error> Resultado<T>::operator()(T porDefecto) noexcept
+        requires utiles::genericos::sin_constructor_por_defecto<T> {
+            return Consumir(porDefecto);
+        }
 
     /*
      *  Especialización para Punteros Desnudos
      */
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::Resultado() noexcept{
+        this->resultado = nullptr;
+        this->error = err::Exito();
+    }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
