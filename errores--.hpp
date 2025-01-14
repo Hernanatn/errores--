@@ -457,8 +457,6 @@ namespace opc{ // Implementación
 
 }
 #endif
-
-
 #ifndef RESULTADO_HPP
 #define RESULTADO_HPP
 
