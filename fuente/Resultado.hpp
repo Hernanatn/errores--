@@ -4,7 +4,7 @@
 #include <tuple>
 #include <utility>
 
-#include "utiles/Genericos.hpp"
+#include <conceptos.hpp>
 #include "Error.hpp"
 
 namespace res { //Declaración
