@@ -76,3 +76,24 @@ if (error) {
 // Continuar con la ejecución normal
 ```
 
+### Categoría
+
+Un `Error` puede llevar una **categoría**: un texto corto que lo clasifica para quien lo atiende (por ejemplo, el
+código que un servicio devuelve a su cliente: `"no-encontrado"`, `"prohibido"`), sin tener que parsear el mensaje. Es
+opcional y por omisión vacía.
+
+```cpp
+err::Error e = err::Generico("no existe el archivo", "no-encontrado");
+e.Categoria();                 // "no-encontrado"
+err::Error f(err::FATAL, "se rompió", "interno");
+
+auto [valor, error] = res::Resultado<int>(0, err::Generico("sin permiso", "prohibido"))();
+error.Categoria();             // "prohibido"
+```
+
+### `<windows.h>` y la macro `ERROR`
+
+`<wingdi.h>` (que trae `<windows.h>`) define la macro `ERROR`. Los encabezados la guardan con `#pragma push_macro`, la
+anulan mientras se compilan y la restauran al final: se pueden incluir después de `<windows.h>` sin problema. En el
+código propio, después de `<windows.h>`, `err::ERROR` sigue chocando con la macro: ahí conviene `err::Generico(...)`
+o `err::CodigoEstado::ERROR` con la macro anulada (`#undef ERROR`).
