@@ -7,6 +7,11 @@
 
 #include <string>
 
+// <windows.h> (vía <wingdi.h>) define la macro `ERROR` (= 0): si se incluye antes que este encabezado, rompe
+// `CodigoEstado::ERROR`. Se guarda, se anula mientras dura el encabezado y se restaura al final, así que el código que
+// incluyó <windows.h> sigue viendo la suya.
+#pragma push_macro("ERROR")
+#undef ERROR
 
 namespace err { // Declaración
     enum CodigoEstado
@@ -26,6 +31,9 @@ namespace err { // Declaración
      *
      * El tipo proporciona mecanismos para obtener el código de estado, el mensaje
      * asociado, y también permite modificar el mensaje mediante la función `agregarMensaje`.
+     *
+     * Opcionalmente lleva una **categoría**: un texto corto que clasifica el error para quien lo atiende (p. ej.
+     * `"no-encontrado"`, `"prohibido"`), sin tener que parsear el mensaje. Por omisión es vacía.
      * Además, sobrecarga varios operadores para permitir el uso conveniente del tipo en
      * expresiones booleanas y de conversión a tipos como `std::string` o `const char*`.
      *
@@ -36,12 +44,15 @@ namespace err { // Declaración
         protected:
         CodigoEstado codigo;
         std::string mensaje;
+        std::string categoria;
         public:
         Error() noexcept : Error{CodigoEstado::ERROR, "ERROR"} {};
         explicit Error(CodigoEstado codigo, std::string mensaje = "ERROR");
+        explicit Error(CodigoEstado codigo, std::string mensaje, std::string categoria);
         explicit Error(Error *e); // <HACER/>
         CodigoEstado Codigo();
         std::string Mensaje();
+        std::string Categoria() const;
 
         void agregarMensaje(std::string mensaje);
 
@@ -63,6 +74,9 @@ namespace err { //Implementación
         this->codigo = codigo;
         this->mensaje = "[" + std::to_string(codigo) + "] " + mensaje + "\n";
     };
+    inline Error::Error(CodigoEstado codigo, std::string mensaje, std::string categoria) : Error(codigo, mensaje){
+        this->categoria = std::move(categoria);
+    };
     inline void Error::agregarMensaje(std::string mensaje){
         this->mensaje = this->mensaje.append(mensaje);
     };
@@ -72,6 +86,9 @@ namespace err { //Implementación
     };
     inline CodigoEstado Error::Codigo(){
         return codigo;
+    };
+    inline std::string Error::Categoria() const{
+        return categoria;
     };
 
     inline Error::operator bool(){ return (this->codigo != CodigoEstado::EXITO); };
@@ -98,7 +115,16 @@ namespace err { //Implementación
             mensaje
         );
     }
+    inline Error Generico(std::string mensaje, std::string categoria){
+        return Error(
+            CodigoEstado::ERROR,
+            mensaje,
+            categoria
+        );
+    }
 }
+
+#pragma pop_macro("ERROR")
 #endif
 #ifndef OPCION_HPP
 #define OPCION_HPP
@@ -505,8 +531,8 @@ namespace res { //Declaración
             Resultado(const Resultado<T>&) = delete;
             Resultado operator=(const Resultado<T>&) = delete;
 
-            Resultado(const Resultado<T>&& otro) noexcept;
-            Resultado& operator=(const Resultado<T>&& otro) noexcept;
+            Resultado(Resultado<T>&& otro) noexcept;
+            Resultado& operator=(Resultado<T>&& otro) noexcept;
             
             explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
             explicit Resultado(T data, err::Error error) noexcept;
@@ -525,15 +551,15 @@ namespace res { //Declaración
             using ResultadoBase<typename T::element_type>::error;
 
         public:
-            Resultado() noexcept : resultado(nullptr), ResultadoBase<typename T::element_type>::error(err::Exito()) {};
+            Resultado() noexcept : resultado(nullptr) { this->error = err::Exito(); };
 
             explicit Resultado(T data) noexcept;
             
             Resultado(const Resultado<T>&) = delete;
             Resultado operator=(const Resultado<T>&) = delete;
 
-            Resultado(const Resultado<T>&& otro) noexcept;
-            Resultado& operator=(const Resultado<T>&& otro) noexcept;
+            Resultado(Resultado<T>&& otro) noexcept;
+            Resultado& operator=(Resultado<T>&& otro) noexcept;
             
             explicit Resultado(T data, err::CodigoEstado codigo, std::string mensaje) noexcept;
             explicit Resultado(T data, err::Error error) noexcept;
@@ -580,6 +606,12 @@ namespace res { // Implementación
         }
     }
 
+    // Declarado en cada variante (tapa el de ResultadoBase): sin definición, usarlo no enlazaba.
+    template<typename T>
+    Resultado<T>::operator bool() noexcept {
+        return !this->error;
+    }
+
     template<typename T>
     std::tuple<T, err::Error> Resultado<T>::Consumir(T porDefecto) noexcept
         requires utiles::genericos::sin_constructor_por_defecto<T> {
@@ -608,6 +640,8 @@ namespace res { // Implementación
 
     /*
      *  Especialización para Punteros Desnudos
+     *
+     *  El movimiento le quita el puntero al otro (queda nulo y con el error «movido»): la memoria tiene un solo dueño.
      */
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
@@ -617,15 +651,16 @@ namespace res { // Implementación
     }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
-    Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
-        this->resultado = std::exchange(otro->resultado, nullptr);
+    Resultado<T>::Resultado(Resultado<T>&& otro) noexcept{
+        this->resultado = std::exchange(otro.resultado, nullptr);
         this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
     }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
-    Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
+    Resultado<T>& Resultado<T>::operator=(Resultado<T>&& otro) noexcept{
         if (this != &otro){
-            this->resultado = std::exchange(otro->resultado, nullptr);
+            delete this->resultado; // el puntero de antes era de esta instancia
+            this->resultado = std::exchange(otro.resultado, nullptr);
             this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
         }
         return *this;
@@ -653,6 +688,11 @@ namespace res { // Implementación
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
     Resultado<T>::~Resultado() noexcept{
         delete resultado; 
+    }
+
+    template <typename T> requires utiles::genericos::puntero_desnudo<T>
+    Resultado<T>::operator bool() noexcept {
+        return !this->error;
     }
 
     template <typename T> requires utiles::genericos::puntero_desnudo<T>
@@ -689,18 +729,23 @@ namespace res { // Implementación
         this->error = e;
     }
     template <typename T> requires utiles::genericos::puntero_inteligente<T>
-    Resultado<T>::Resultado(const Resultado<T>&& otro) noexcept{
-        this->resultado = std::move(std::exchange(otro->resultado, nullptr));
+    Resultado<T>::Resultado(Resultado<T>&& otro) noexcept{
+        this->resultado = std::move(std::exchange(otro.resultado, nullptr));
         this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
     }
 
     template <typename T> requires utiles::genericos::puntero_inteligente<T>
-    Resultado<T>& Resultado<T>::operator=(const Resultado<T>&& otro) noexcept{
+    Resultado<T>& Resultado<T>::operator=(Resultado<T>&& otro) noexcept{
         if (this != &otro){
-            this->resultado = std::move(std::exchange(otro->resultado, nullptr));
+            this->resultado = std::move(std::exchange(otro.resultado, nullptr));
             this->error = std::exchange(otro.error, err::Generico("Resultado movido."));
         }
         return *this;
+    }
+
+    template <typename T> requires utiles::genericos::puntero_inteligente<T>
+    Resultado<T>::operator bool() noexcept {
+        return !this->error;
     }
 
     template <typename T> requires utiles::genericos::puntero_inteligente<T>

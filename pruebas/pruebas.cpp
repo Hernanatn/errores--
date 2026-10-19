@@ -280,3 +280,72 @@ int main(int argc, char* argv[]) {
     // Devolver 1 si alguna prueba falló.
     return (codigo == 0) ? 0 : 1;
 }
+
+/****************************************************************
+ *                  ARREGLOS PARA EL TALLER                     *
+ * ------------------------------------------------------------ *
+ *   Categoría del error, movimiento de Resultado<T*> y         *
+ *   Resultado<unique_ptr>, la macro ERROR de <windows.h> y     *
+ *   las definiciones de cabecera en dos unidades               *
+ *   (otra_unidad.cpp).                                         *
+ ***************************************************************/
+
+int macroErrorDespuesDeIncluir();
+err::Error errorDeOtraUnidad();
+
+TEST_CASE("Error con categoría", "[error][categoria]") {
+    err::Error sin = err::Generico("sin categoría");
+    REQUIRE(sin.Categoria().empty());
+    err::Error con = err::Generico("no existe el archivo", "no-encontrado");
+    REQUIRE(con.Categoria() == "no-encontrado");
+    REQUIRE(con.Codigo() == err::CodigoEstado::ERROR);
+    REQUIRE(con.Mensaje().find("no existe el archivo") != std::string::npos);
+    err::Error fatal(err::CodigoEstado::FATAL, "se rompió", "interno");
+    REQUIRE(fatal.Categoria() == "interno");
+    REQUIRE(fatal.Codigo() == err::CodigoEstado::FATAL);
+    // Viaja dentro de un Resultado.
+    auto [valor, error] = res::Resultado<int>(0, err::Generico("nada", "prohibido"))();
+    REQUIRE(error.Categoria() == "prohibido");
+}
+
+TEST_CASE("La macro ERROR de <windows.h> y dos unidades", "[error][macro][odr]") {
+    // otra_unidad.cpp definió ERROR antes de incluir: después la ve intacta.
+    REQUIRE(macroErrorDespuesDeIncluir() == 0);
+    err::Error e = errorDeOtraUnidad();
+    REQUIRE(e.Codigo() == err::CodigoEstado::ERROR);
+    REQUIRE(e.Categoria() == "otra-unidad");
+}
+
+static res::Resultado<int*> resultadoConNombre(int valor) {
+    res::Resultado<int*> r(new int(valor));
+    return r; // instancia el constructor de movimiento
+}
+
+TEST_CASE("Resultado con puntero desnudo se mueve", "[resultado][punteros][movimiento]") {
+    res::Resultado<int*> r = resultadoConNombre(42);
+    REQUIRE(static_cast<bool>(r));
+
+    res::Resultado<int*> movido(std::move(r));
+    auto [nada, errorMovido] = r();
+    REQUIRE(nada == nullptr);
+    REQUIRE(errorMovido.Mensaje().find("movido") != std::string::npos);
+
+    res::Resultado<int*> otro(new int(7));
+    otro = std::move(movido); // libera el 7 y toma el 42
+    auto [p, error] = otro();
+    REQUIRE_FALSE(error);
+    REQUIRE(p != nullptr);
+    REQUIRE(*p == 42);
+    delete p;
+}
+
+TEST_CASE("Resultado con unique_ptr se mueve", "[resultado][smart_ptr][movimiento]") {
+    res::Resultado<std::unique_ptr<int>> r(std::make_unique<int>(5));
+    res::Resultado<std::unique_ptr<int>> movido(std::move(r));
+    res::Resultado<std::unique_ptr<int>> destino;
+    destino = std::move(movido);
+    auto [p, error] = destino();
+    REQUIRE_FALSE(error);
+    REQUIRE(p != nullptr);
+    REQUIRE(*p == 5);
+}

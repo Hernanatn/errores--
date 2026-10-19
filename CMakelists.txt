@@ -19,7 +19,9 @@ target_include_directories(errores-- INTERFACE ${UTILES_DIR}/fuente)
 
 
 enable_testing()
-add_executable(correr_pruebas pruebas/pruebas.cpp)
+# otra_unidad.cpp: una segunda unidad que incluye los encabezados (definiciones múltiples al enlazar), con la
+# macro ERROR de <windows.h> definida antes.
+add_executable(correr_pruebas pruebas/pruebas.cpp pruebas/otra_unidad.cpp)
 target_include_directories(correr_pruebas PRIVATE ${CATCH2_DIR}/src)
 target_link_libraries(correr_pruebas PRIVATE errores-- Catch2::Catch2WithMain)
 
