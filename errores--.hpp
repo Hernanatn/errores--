@@ -5,6 +5,7 @@
 #define ERROR_HPP
 
 
+#include <ostream>
 #include <string>
 
 // <windows.h> (vía <wingdi.h>) define la macro `ERROR` (= 0): si se incluye antes que este encabezado, rompe
