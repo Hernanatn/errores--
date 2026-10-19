@@ -6,7 +6,7 @@
 [![Version: Alpha v0.2.0](https://img.shields.io/badge/version-Alpha_v0.2.0-orange.svg)](https://github.com/hernanatn/github.com/hernanatn/aplicacion.go/releases/latest)
 [![C++ Version: 20](https://img.shields.io/badge/C%2B%2B-20-blue?logo=cplusplus)](https://isocpp.org/std/the-standard)
 ![Packaging](https://img.shields.io/github/actions/workflow/status/Hernanatn/errores--/empaquetar.yml?label=bundle)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](LICENSE)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](LICENSE)
 
 1. [Introduction](#errores--)
     - [Usage](#usage)
